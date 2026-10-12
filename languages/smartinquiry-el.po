@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SmartInquiry 1.3.0\n"
-"Report-Msgid-Bugs-To: https://smartupweb.com\n"
+"Report-Msgid-Bugs-To: https://github.com/gglias/smartinquiry/issues\n"
 "Last-Translator: Smartup\n"
 "Language-Team: Greek\n"
 "MIME-Version: 1.0\n"
@@ -28,13 +28,13 @@ msgstr "Φόρμα αιτήματος προσφοράς σε βήματα, μέ
 
 #. Author of the plugin
 #: smartinquiry.php
-msgid "Smartup"
-msgstr "Smartup"
+msgid "GG"
+msgstr "GG"
 
 #. Author URI of the plugin
 #: smartinquiry.php
-msgid "https://smartupweb.com"
-msgstr "https://smartupweb.com"
+msgid "https://gglias.github.io"
+msgstr "https://gglias.github.io"
 
 #: includes/admin-i18n.php:11
 msgid "Screen language"

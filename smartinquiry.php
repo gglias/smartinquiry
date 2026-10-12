@@ -3,8 +3,8 @@
  * Plugin Name:       SmartInquiry
  * Description:       Step-by-step quote request form in a popup. Visitors pick a service, answer a few questions and download their request as a PDF; you get every request in the admin and by email. WPML ready.
  * Version:           1.3.0
- * Author:            Smartup
- * Author URI:        https://smartupweb.com
+ * Author:            GG
+ * Author URI:        https://gglias.github.io
  * Plugin URI:        https://github.com/gglias/smartinquiry
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@
  * Domain Path:       /languages
  * Requires at least: 6.1
  * Requires PHP:      7.4
- * Update URI:        https://smartupweb.com/plugins/smartinquiry
+ * Update URI:        https://github.com/gglias/smartinquiry
  */
 
 defined( 'ABSPATH' ) || exit;

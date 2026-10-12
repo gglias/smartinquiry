@@ -60,4 +60,4 @@ Or clone this repository into `wp-content/plugins/smartinquiry`.
 
 [GPL-2.0-or-later](LICENSE). Bundled assets keep their own licenses, listed above.
 
-Made by [Greg Glias](https://gglias.github.io) at [Smartup](https://smartupweb.com).
+Made by **GG** · [Greg Glias](https://gglias.github.io)
