@@ -1,0 +1,1724 @@
+# Copyright (C) 2026 Smartup
+# This file is distributed under the same license as the SmartInquiry plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: SmartInquiry 1.3.0\n"
+"Report-Msgid-Bugs-To: https://smartupweb.com\n"
+"Last-Translator: Smartup\n"
+"Language-Team: Greek\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-26T22:27:03+00:00\n"
+"PO-Revision-Date: 2026-09-26 22:27+0000\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: smartinquiry\n"
+
+#. Plugin Name of the plugin
+#: smartinquiry.php
+msgid "SmartInquiry"
+msgstr "SmartInquiry"
+
+#. Description of the plugin
+#: smartinquiry.php
+msgid "Step-by-step quote request form in a popup. Visitors pick a service, answer a few questions and download their request as a PDF; you get every request in the admin and by email. WPML ready."
+msgstr "Φόρμα αιτήματος προσφοράς σε βήματα, μέσα σε popup. Ο επισκέπτης διαλέγει υπηρεσία, απαντά σε λίγες ερωτήσεις και κατεβάζει το αίτημά του σε PDF· εσείς βλέπετε κάθε αίτημα στο admin και το λαμβάνετε με email. Συμβατό με WPML."
+
+#. Author of the plugin
+#: smartinquiry.php
+msgid "Smartup"
+msgstr "Smartup"
+
+#. Author URI of the plugin
+#: smartinquiry.php
+msgid "https://smartupweb.com"
+msgstr "https://smartupweb.com"
+
+#: includes/admin-i18n.php:11
+msgid "Screen language"
+msgstr "Γλώσσα οθόνης"
+
+#: includes/admin-i18n.php:12
+msgid "By service"
+msgstr "Ανά υπηρεσία"
+
+#: includes/admin-i18n.php:13
+msgid "All"
+msgstr "Όλα"
+
+#: includes/admin-i18n.php:14
+msgid "Administrator"
+msgstr "Διαχειριστής"
+
+#: includes/admin-i18n.php:15
+#: includes/admin.php:56
+msgid "Requests"
+msgstr "Αιτήματα"
+
+#: includes/admin-i18n.php:16
+msgid "Form"
+msgstr "Φόρμα"
+
+#: includes/admin-i18n.php:17
+msgid "Texts"
+msgstr "Κείμενα"
+
+#: includes/admin-i18n.php:18
+#: includes/admin-i18n.php:66
+msgid "Notifications"
+msgstr "Ειδοποιήσεις"
+
+#: includes/admin-i18n.php:19
+msgid "PDF"
+msgstr "PDF"
+
+#: includes/admin-i18n.php:20
+msgid "Appearance & links"
+msgstr "Εμφάνιση & σύνδεση"
+
+#: includes/admin-i18n.php:21
+msgid "Privacy"
+msgstr "Απόρρητο"
+
+#: includes/admin-i18n.php:42
+msgid "Save"
+msgstr "Αποθήκευση"
+
+#: includes/admin-i18n.php:43
+msgid "Settings saved."
+msgstr "Οι ρυθμίσεις αποθηκεύτηκαν."
+
+#. translators: %s: names of caching plugins
+#: includes/admin-i18n.php:45
+#, php-format
+msgid "Settings saved. Page cache cleared: %s."
+msgstr "Οι ρυθμίσεις αποθηκεύτηκαν. Καθαρίστηκε το cache σελίδων: %s."
+
+#: includes/admin-i18n.php:46
+msgid "Unsaved changes"
+msgstr "Μη αποθηκευμένες αλλαγές"
+
+#: includes/admin-i18n.php:47
+msgid "All changes saved"
+msgstr "Όλα αποθηκεύτηκαν"
+
+#: includes/admin-i18n.php:48
+msgid "Save your changes first."
+msgstr "Αποθηκεύστε πρώτα τις αλλαγές σας."
+
+#: includes/admin-i18n.php:49
+msgid "You have unsaved changes. Switch the screen language anyway?"
+msgstr "Έχετε μη αποθηκευμένες αλλαγές. Να αλλάξει η γλώσσα της οθόνης;"
+
+#: includes/admin-i18n.php:50
+msgid "Something went wrong. Please try again."
+msgstr "Κάτι πήγε στραβά. Δοκιμάστε ξανά."
+
+#: includes/admin-i18n.php:51
+msgid "Loading…"
+msgstr "Φόρτωση…"
+
+#: includes/admin-i18n.php:52
+#: includes/admin-i18n.php:270
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: includes/admin-i18n.php:53
+msgid "Copy"
+msgstr "Αντιγραφή"
+
+#. translators: %s: copied text
+#: includes/admin-i18n.php:55
+#, php-format
+msgid "Copied: %s"
+msgstr "Αντιγράφηκε: %s"
+
+#: includes/admin-i18n.php:56
+msgid "Delete"
+msgstr "Διαγραφή"
+
+#: includes/admin-i18n.php:57
+msgid "Sure? Delete"
+msgstr "Σίγουρα; Διαγραφή"
+
+#: includes/admin-i18n.php:58
+msgid "Back to the Smartup logo"
+msgstr "Επιστροφή στο logo της Smartup"
+
+#: includes/admin-i18n.php:59
+msgid "(no title)"
+msgstr "(χωρίς τίτλο)"
+
+#: includes/admin-i18n.php:60
+msgid "hidden"
+msgstr "κρυφή"
+
+#: includes/admin-i18n.php:63
+msgid "Every request sent from the form on your site, newest first."
+msgstr "Όλα τα αιτήματα από τη φόρμα του site, με το πιο πρόσφατο πάνω."
+
+#: includes/admin-i18n.php:64
+msgid "Export CSV"
+msgstr "Εξαγωγή CSV"
+
+#: includes/admin-i18n.php:85
+msgid "Export"
+msgstr "Εξαγωγή"
+
+#: includes/admin-i18n.php:86
+msgid "New, not answered yet"
+msgstr "Νέα, χωρίς απάντηση"
+
+#: includes/admin-i18n.php:87
+msgid "Last 7 days"
+msgstr "Τελευταίες 7 ημέρες"
+
+#: includes/admin-i18n.php:88
+msgid "This month"
+msgstr "Αυτόν τον μήνα"
+
+#: includes/admin-i18n.php:89
+msgid "Won projects"
+msgstr "Κλεισμένα έργα"
+
+#: includes/admin-i18n.php:90
+msgid "All requests"
+msgstr "Όλα τα αιτήματα"
+
+#: includes/admin-i18n.php:91
+#: includes/admin.php:469
+msgid "Status"
+msgstr "Κατάσταση"
+
+#: includes/admin-i18n.php:92
+#: includes/admin.php:468
+msgid "New"
+msgstr "Νέο"
+
+#: includes/admin-i18n.php:93
+#: includes/admin.php:468
+msgid "In contact"
+msgstr "Σε επικοινωνία"
+
+#: includes/admin-i18n.php:94
+#: includes/admin.php:468
+msgid "Offer sent"
+msgstr "Στάλθηκε προσφορά"
+
+#: includes/admin-i18n.php:95
+#: includes/admin.php:468
+msgid "Won"
+msgstr "Κλείστηκε"
+
+#: includes/admin-i18n.php:96
+#: includes/admin.php:468
+msgid "Lost"
+msgstr "Χάθηκε"
+
+#: includes/admin-i18n.php:97
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: includes/admin-i18n.php:98
+msgid "Search name, email, phone, number"
+msgstr "Αναζήτηση ονόματος, email, τηλεφώνου, αριθμού"
+
+#: includes/admin-i18n.php:99
+msgid "Filters"
+msgstr "Φίλτρα"
+
+#: includes/admin-i18n.php:100
+#: includes/submit.php:434
+msgid "Service"
+msgstr "Υπηρεσία"
+
+#: includes/admin-i18n.php:101
+#: includes/admin.php:469
+#: includes/submit.php:505
+msgid "Form language"
+msgstr "Γλώσσα φόρμας"
+
+#: includes/admin-i18n.php:102
+msgid "Remove filter"
+msgstr "Αφαίρεση φίλτρου"
+
+#. translators: %d: number of requests
+#: includes/admin-i18n.php:104
+#, php-format
+msgid "%d selected"
+msgstr "%d επιλεγμένα"
+
+#: includes/admin-i18n.php:105
+msgid "Change status"
+msgstr "Αλλαγή κατάστασης"
+
+#: includes/admin-i18n.php:106
+msgid "Select all"
+msgstr "Επιλογή όλων"
+
+#. translators: %s: customer name
+#: includes/admin-i18n.php:108
+#, php-format
+msgid "Select %s"
+msgstr "Επιλογή: %s"
+
+#. translators: %s: customer name
+#: includes/admin-i18n.php:110
+#, php-format
+msgid "Open %s"
+msgstr "Άνοιγμα: %s"
+
+#: includes/admin-i18n.php:111
+msgid "Customer"
+msgstr "Πελάτης"
+
+#: includes/admin-i18n.php:112
+msgid "Service & budget"
+msgstr "Υπηρεσία & budget"
+
+#: includes/admin-i18n.php:113
+#: includes/admin.php:469
+#: includes/store.php:225
+msgid "Date"
+msgstr "Ημερομηνία"
+
+#: includes/admin-i18n.php:114
+msgid "Actions"
+msgstr "Ενέργειες"
+
+#: includes/admin-i18n.php:115
+msgid "Not opened yet"
+msgstr "Δεν το έχετε ανοίξει"
+
+#: includes/admin-i18n.php:116
+msgid "No requests yet"
+msgstr "Δεν υπάρχουν ακόμα αιτήματα"
+
+#: includes/admin-i18n.php:117
+msgid "When someone sends the form on your site, the request appears here."
+msgstr "Όταν κάποιος στείλει τη φόρμα του site, το αίτημα εμφανίζεται εδώ."
+
+#: includes/admin-i18n.php:118
+msgid "No requests here"
+msgstr "Κανένα αίτημα εδώ"
+
+#: includes/admin-i18n.php:119
+msgid "Try another search or remove a filter."
+msgstr "Δοκιμάστε άλλη αναζήτηση ή αφαιρέστε κάποιο φίλτρο."
+
+#. translators: 1: current page, 2: number of pages
+#: includes/admin-i18n.php:121
+#, php-format
+msgid "Page %1$s of %2$s"
+msgstr "Σελίδα %1$s από %2$s"
+
+#. translators: %d: number of requests
+#: includes/admin-i18n.php:123
+#, php-format
+msgid "%d requests"
+msgstr "%d αιτήματα"
+
+#: includes/admin-i18n.php:124
+msgid "1 request"
+msgstr "1 αίτημα"
+
+#: includes/admin-i18n.php:125
+msgid "First page"
+msgstr "Πρώτη σελίδα"
+
+#: includes/admin-i18n.php:126
+msgid "Previous page"
+msgstr "Προηγούμενη σελίδα"
+
+#: includes/admin-i18n.php:127
+msgid "Next page"
+msgstr "Επόμενη σελίδα"
+
+#: includes/admin-i18n.php:128
+msgid "Last page"
+msgstr "Τελευταία σελίδα"
+
+#. translators: %s: time
+#: includes/admin-i18n.php:130
+#, php-format
+msgid "Today, %s"
+msgstr "Σήμερα, %s"
+
+#. translators: %s: time
+#: includes/admin-i18n.php:132
+#, php-format
+msgid "Yesterday, %s"
+msgstr "Χθες, %s"
+
+#. translators: %d: number of requests
+#: includes/admin-i18n.php:134
+#, php-format
+msgid "%d requests deleted."
+msgstr "Διαγράφηκαν %d αιτήματα."
+
+#: includes/admin-i18n.php:135
+msgid "1 request deleted."
+msgstr "Διαγράφηκε 1 αίτημα."
+
+#. translators: 1: number of requests, 2: status
+#: includes/admin-i18n.php:137
+#, php-format
+msgid "%1$d requests changed to \"%2$s\"."
+msgstr "%1$d αιτήματα άλλαξαν σε «%2$s»."
+
+#. translators: 1: always 1, 2: status
+#: includes/admin-i18n.php:139
+#, php-format
+msgid "%1$d request changed to \"%2$s\"."
+msgstr "%1$d αίτημα άλλαξε σε «%2$s»."
+
+#. translators: %s: status
+#: includes/admin-i18n.php:141
+#, php-format
+msgid "Status: %s"
+msgstr "Κατάσταση: %s"
+
+#. translators: %s: request number
+#: includes/admin-i18n.php:143
+#, php-format
+msgid "Request %s deleted."
+msgstr "Το αίτημα %s διαγράφηκε."
+
+#. translators: %s: language name
+#: includes/admin-i18n.php:145
+#, php-format
+msgid "Form in %s"
+msgstr "Φόρμα στα %s"
+
+#: includes/admin-i18n.php:146
+#: includes/admin-i18n.php:346
+#: includes/admin.php:469
+#: includes/store.php:227
+#: includes/submit.php:494
+#: includes/submit.php:501
+msgid "Email"
+msgstr "Email"
+
+#: includes/admin-i18n.php:147
+#: includes/admin-i18n.php:345
+#: includes/admin.php:469
+#: includes/store.php:228
+#: includes/submit.php:494
+#: includes/submit.php:501
+msgid "Phone"
+msgstr "Τηλέφωνο"
+
+#: includes/admin-i18n.php:148
+#: includes/submit.php:505
+msgid "Prefers to be contacted by"
+msgstr "Προτιμά επικοινωνία με"
+
+#: includes/admin-i18n.php:149
+#: includes/admin.php:469
+#: includes/store.php:235
+msgid "Internal notes"
+msgstr "Εσωτερικές σημειώσεις"
+
+#: includes/admin-i18n.php:150
+msgid "e.g. We spoke on the phone, sending the offer on Tuesday."
+msgstr "π.χ. Μιλήσαμε στο τηλέφωνο, στέλνουμε προσφορά την Τρίτη."
+
+#: includes/admin-i18n.php:151
+msgid "Only your team sees these. They are not in the customer’s PDF. Saved when you click outside the box."
+msgstr "Τις βλέπει μόνο η ομάδα σας. Δεν μπαίνουν στο PDF του πελάτη. Αποθηκεύονται μόλις πατήσετε έξω από το πλαίσιο."
+
+#: includes/admin-i18n.php:152
+msgid "Note saved."
+msgstr "Η σημείωση αποθηκεύτηκε."
+
+#: includes/admin-i18n.php:153
+msgid "Download PDF"
+msgstr "Κατέβασμα PDF"
+
+#: includes/admin-i18n.php:156
+msgid "Services, steps and questions. Drag to reorder. Changes reach the form on your site when you save."
+msgstr "Υπηρεσίες, βήματα και ερωτήσεις. Σύρετε για να αλλάξετε σειρά. Οι αλλαγές περνούν στη φόρμα του site με την αποθήκευση."
+
+#: includes/admin-i18n.php:157
+msgid "Language of the texts"
+msgstr "Γλώσσα κειμένων"
+
+#: includes/admin-i18n.php:158
+msgid "Drag to reorder"
+msgstr "Σύρετε για αλλαγή σειράς"
+
+#. translators: %d: number of questions
+#: includes/admin-i18n.php:160
+#, php-format
+msgid "%d questions"
+msgstr "%d ερωτήσεις"
+
+#: includes/admin-i18n.php:161
+msgid "1 question"
+msgstr "1 ερώτηση"
+
+#: includes/admin-i18n.php:162
+msgid "Shared questions"
+msgstr "Κοινές ερωτήσεις"
+
+#: includes/admin-i18n.php:163
+msgid "Asked for every service"
+msgstr "Για κάθε υπηρεσία"
+
+#: includes/admin-i18n.php:164
+msgid "New service"
+msgstr "Νέα υπηρεσία"
+
+#: includes/admin-i18n.php:165
+msgid "The new service stays hidden until you switch it on."
+msgstr "Η νέα υπηρεσία μένει κρυφή μέχρι να την ενεργοποιήσετε."
+
+#: includes/admin-i18n.php:166
+msgid "Shown in the form"
+msgstr "Εμφανίζεται στη φόρμα"
+
+#: includes/admin-i18n.php:167
+msgid "Service name"
+msgstr "Όνομα υπηρεσίας"
+
+#: includes/admin-i18n.php:168
+msgid "Short description"
+msgstr "Μικρή περιγραφή"
+
+#: includes/admin-i18n.php:169
+msgid "Icon"
+msgstr "Εικονίδιο"
+
+#: includes/admin-i18n.php:170
+msgid "Step 2 · Details"
+msgstr "Βήμα 2 · Λεπτομέρειες"
+
+#: includes/admin-i18n.php:171
+msgid "Step 3 · Features"
+msgstr "Βήμα 3 · Λειτουργίες"
+
+#: includes/admin-i18n.php:172
+msgid "No questions: the form skips this step"
+msgstr "Χωρίς ερωτήσεις: η φόρμα παραλείπει αυτό το βήμα"
+
+#: includes/admin-i18n.php:173
+msgid "Step title"
+msgstr "Τίτλος βήματος"
+
+#: includes/admin-i18n.php:174
+msgid "Text under the title"
+msgstr "Κείμενο κάτω από τον τίτλο"
+
+#: includes/admin-i18n.php:175
+msgid "New question"
+msgstr "Νέα ερώτηση"
+
+#: includes/admin-i18n.php:176
+msgid "Required"
+msgstr "Υποχρεωτική"
+
+#: includes/admin-i18n.php:177
+msgid "Conditional"
+msgstr "Με συνθήκη"
+
+#: includes/admin-i18n.php:178
+msgid "Question"
+msgstr "Ερώτηση"
+
+#: includes/admin-i18n.php:179
+msgid "Small grey note"
+msgstr "Μικρή γκρι σημείωση"
+
+#: includes/admin-i18n.php:180
+msgid "e.g. optional"
+msgstr "π.χ. προαιρετικό"
+
+#: includes/admin-i18n.php:181
+msgid "Type of answer"
+msgstr "Τύπος απάντησης"
+
+#: includes/admin-i18n.php:182
+msgid "One choice"
+msgstr "Μία επιλογή"
+
+#: includes/admin-i18n.php:183
+msgid "Several choices"
+msgstr "Πολλές επιλογές"
+
+#: includes/admin-i18n.php:184
+msgid "Short text"
+msgstr "Σύντομο κείμενο"
+
+#: includes/admin-i18n.php:185
+msgid "Long text"
+msgstr "Μεγάλο κείμενο"
+
+#: includes/admin-i18n.php:186
+msgid "\"Other\" choice with a text box"
+msgstr "Επιλογή «Άλλο» με πεδίο κειμένου"
+
+#: includes/admin-i18n.php:187
+msgid "Example text in the empty box"
+msgstr "Παράδειγμα μέσα στο κενό πεδίο"
+
+#: includes/admin-i18n.php:188
+msgid "e.g. www.example.com"
+msgstr "π.χ. www.example.gr"
+
+#: includes/admin-i18n.php:189
+msgid "Only show if"
+msgstr "Εμφάνιση μόνο αν"
+
+#: includes/admin-i18n.php:190
+msgid "Answer"
+msgstr "Απάντηση"
+
+#: includes/admin-i18n.php:191
+msgid "Always shown"
+msgstr "Εμφανίζεται πάντα"
+
+#: includes/admin-i18n.php:192
+msgid "Choices"
+msgstr "Επιλογές"
+
+#. translators: %d: number
+#: includes/admin-i18n.php:194
+#, php-format
+msgid "Choice %d"
+msgstr "Επιλογή %d"
+
+#: includes/admin-i18n.php:195
+msgid "Add choice"
+msgstr "Προσθήκη επιλογής"
+
+#: includes/admin-i18n.php:196
+msgid "Remove choice"
+msgstr "Αφαίρεση επιλογής"
+
+#: includes/admin-i18n.php:197
+msgid "Up"
+msgstr "Πάνω"
+
+#: includes/admin-i18n.php:198
+msgid "Down"
+msgstr "Κάτω"
+
+#: includes/admin-i18n.php:199
+msgid "Delete question"
+msgstr "Διαγραφή ερώτησης"
+
+#: includes/admin-i18n.php:200
+msgid "Delete service"
+msgstr "Διαγραφή υπηρεσίας"
+
+#: includes/admin-i18n.php:201
+msgid "Budget"
+msgstr "Προϋπολογισμός"
+
+#: includes/admin-i18n.php:202
+#: includes/admin-i18n.php:204
+msgid "Step 4 · required, one choice"
+msgstr "Βήμα 4 · υποχρεωτική, μία επιλογή"
+
+#: includes/admin-i18n.php:203
+msgid "When would you like to start?"
+msgstr "Πότε θέλετε να ξεκινήσουμε;"
+
+#: includes/admin-i18n.php:205
+msgid "The question texts of steps 4 and 5 (budget, notes, name, email, phone…) are in Texts."
+msgstr "Τα κείμενα των ερωτήσεων στα βήματα 4 και 5 (budget, σημειώσεις, όνομα, email, τηλέφωνο…) είναι στα Κείμενα."
+
+#: includes/admin-i18n.php:208
+msgid "Everything else the visitor reads, in every language of the site. Leave a box empty to hide that text where possible."
+msgstr "Ό,τι άλλο διαβάζει ο επισκέπτης, σε κάθε γλώσσα του site. Αφήστε ένα πεδίο κενό για να κρυφτεί το κείμενο, όπου γίνεται."
+
+#: includes/admin-i18n.php:209
+msgid "Reset to default"
+msgstr "Επαναφορά προεπιλογής"
+
+#: includes/admin-i18n.php:210
+msgid "Information boxes"
+msgstr "Πλαίσια πληροφοριών"
+
+#: includes/admin-i18n.php:211
+msgid "Titles and steps"
+msgstr "Τίτλοι και βήματα"
+
+#: includes/admin-i18n.php:212
+msgid "Questions of steps 4 and 5"
+msgstr "Ερωτήσεις βημάτων 4 και 5"
+
+#: includes/admin-i18n.php:213
+msgid "Buttons"
+msgstr "Κουμπιά"
+
+#: includes/admin-i18n.php:214
+msgid "Error messages"
+msgstr "Μηνύματα λάθους"
+
+#: includes/admin-i18n.php:215
+msgid "Thank you and PDF"
+msgstr "Ευχαριστία και PDF"
+
+#: includes/admin-i18n.php:216
+msgid "Step 1 · information"
+msgstr "Βήμα 1 · πληροφορία"
+
+#: includes/admin-i18n.php:217
+msgid "Step 3 · information"
+msgstr "Βήμα 3 · πληροφορία"
+
+#: includes/admin-i18n.php:218
+msgid "Step 4 · information"
+msgstr "Βήμα 4 · πληροφορία"
+
+#: includes/admin-i18n.php:219
+msgid "Step 5 · information"
+msgstr "Βήμα 5 · πληροφορία"
+
+#: includes/admin-i18n.php:220
+msgid "Reply time"
+msgstr "Χρόνος απάντησης"
+
+#: includes/admin-i18n.php:221
+msgid "Side panel and PDF footer."
+msgstr "Στο πλαϊνό μενού και στο υποσέλιδο του PDF."
+
+#: includes/admin-i18n.php:222
+msgid "Form title"
+msgstr "Τίτλος φόρμας"
+
+#: includes/admin-i18n.php:223
+msgid "Under the form title"
+msgstr "Κάτω από τον τίτλο της φόρμας"
+
+#: includes/admin-i18n.php:224
+msgid "Step 1 · title"
+msgstr "Βήμα 1 · τίτλος"
+
+#: includes/admin-i18n.php:225
+msgid "Step 1 · text"
+msgstr "Βήμα 1 · κείμενο"
+
+#: includes/admin-i18n.php:226
+msgid "Step 4 · title"
+msgstr "Βήμα 4 · τίτλος"
+
+#: includes/admin-i18n.php:227
+msgid "Step 4 · text"
+msgstr "Βήμα 4 · κείμενο"
+
+#: includes/admin-i18n.php:228
+msgid "Step 5 · title"
+msgstr "Βήμα 5 · τίτλος"
+
+#: includes/admin-i18n.php:229
+msgid "Step 5 · text"
+msgstr "Βήμα 5 · κείμενο"
+
+#: includes/admin-i18n.php:230
+msgid "Summary title"
+msgstr "Τίτλος σύνοψης"
+
+#: includes/admin-i18n.php:231
+msgid "Summary when empty"
+msgstr "Σύνοψη όταν είναι κενή"
+
+#: includes/admin-i18n.php:232
+msgid "Step counter"
+msgstr "Μετρητής βημάτων"
+
+#: includes/admin-i18n.php:233
+msgid "{n} = current step, {t} = number of steps."
+msgstr "{n} = τρέχον βήμα, {t} = σύνολο βημάτων."
+
+#: includes/admin-i18n.php:234
+msgid "Step name · service"
+msgstr "Όνομα βήματος · υπηρεσία"
+
+#: includes/admin-i18n.php:235
+msgid "Step name · details"
+msgstr "Όνομα βήματος · λεπτομέρειες"
+
+#: includes/admin-i18n.php:236
+msgid "Step name · features"
+msgstr "Όνομα βήματος · λειτουργίες"
+
+#: includes/admin-i18n.php:237
+msgid "Step name · timing & budget"
+msgstr "Όνομα βήματος · χρόνος & budget"
+
+#: includes/admin-i18n.php:238
+msgid "Step name · contact details"
+msgstr "Όνομα βήματος · στοιχεία"
+
+#: includes/admin-i18n.php:239
+msgid "Question · when"
+msgstr "Ερώτηση · πότε"
+
+#: includes/admin-i18n.php:240
+msgid "Question · budget"
+msgstr "Ερώτηση · budget"
+
+#: includes/admin-i18n.php:241
+msgid "Note next to the budget"
+msgstr "Σημείωση δίπλα στο budget"
+
+#: includes/admin-i18n.php:242
+msgid "Question · notes"
+msgstr "Ερώτηση · σημειώσεις"
+
+#: includes/admin-i18n.php:243
+msgid "Example text · notes"
+msgstr "Παράδειγμα · σημειώσεις"
+
+#: includes/admin-i18n.php:244
+msgid "Word \"optional\""
+msgstr "Λέξη «προαιρετικό»"
+
+#: includes/admin-i18n.php:245
+msgid "Field · name"
+msgstr "Πεδίο · όνομα"
+
+#: includes/admin-i18n.php:246
+msgid "Example · name"
+msgstr "Παράδειγμα · όνομα"
+
+#: includes/admin-i18n.php:247
+msgid "Field · email"
+msgstr "Πεδίο · email"
+
+#: includes/admin-i18n.php:248
+msgid "Example · email"
+msgstr "Παράδειγμα · email"
+
+#: includes/admin-i18n.php:249
+msgid "Field · phone"
+msgstr "Πεδίο · τηλέφωνο"
+
+#: includes/admin-i18n.php:250
+msgid "Example · phone"
+msgstr "Παράδειγμα · τηλέφωνο"
+
+#: includes/admin-i18n.php:251
+msgid "Field · company"
+msgstr "Πεδίο · εταιρεία"
+
+#: includes/admin-i18n.php:252
+msgid "Example · company"
+msgstr "Παράδειγμα · εταιρεία"
+
+#: includes/admin-i18n.php:253
+msgid "Question · how to contact"
+msgstr "Ερώτηση · τρόπος επικοινωνίας"
+
+#: includes/admin-i18n.php:254
+msgid "Choice · phone"
+msgstr "Επιλογή · τηλέφωνο"
+
+#: includes/admin-i18n.php:255
+msgid "Choice · email"
+msgstr "Επιλογή · email"
+
+#: includes/admin-i18n.php:256
+msgid "Consent"
+msgstr "Συγκατάθεση"
+
+#: includes/admin-i18n.php:257
+msgid "{link} becomes the link to the privacy page."
+msgstr "Το {link} γίνεται ο σύνδεσμος προς τη σελίδα απορρήτου."
+
+#: includes/admin-i18n.php:258
+msgid "Privacy link text"
+msgstr "Κείμενο συνδέσμου απορρήτου"
+
+#: includes/admin-i18n.php:259
+msgid "Choice \"Other\""
+msgstr "Επιλογή «Άλλο»"
+
+#: includes/admin-i18n.php:260
+msgid "Example · \"Other\" box"
+msgstr "Παράδειγμα · πεδίο «Άλλο»"
+
+#: includes/admin-i18n.php:261
+msgid "Back"
+msgstr "Πίσω"
+
+#: includes/admin-i18n.php:262
+msgid "Continue"
+msgstr "Συνέχεια"
+
+#: includes/admin-i18n.php:263
+msgid "Send"
+msgstr "Αποστολή"
+
+#: includes/admin-i18n.php:264
+msgid "While sending"
+msgstr "Κατά την αποστολή"
+
+#: includes/admin-i18n.php:265
+msgid "Clear"
+msgstr "Καθαρισμός"
+
+#: includes/admin-i18n.php:266
+msgid "Clear · question"
+msgstr "Καθαρισμός · ερώτηση"
+
+#: includes/admin-i18n.php:267
+msgid "Clear · explanation"
+msgstr "Καθαρισμός · εξήγηση"
+
+#: includes/admin-i18n.php:268
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#: includes/admin-i18n.php:269
+msgid "Clear · confirm"
+msgstr "Καθαρισμός · επιβεβαίωση"
+
+#: includes/admin-i18n.php:271
+msgid "No choice made"
+msgstr "Δεν έγινε επιλογή"
+
+#: includes/admin-i18n.php:272
+msgid "Nothing ticked"
+msgstr "Δεν τσεκαρίστηκε τίποτα"
+
+#: includes/admin-i18n.php:273
+msgid "Empty field"
+msgstr "Κενό πεδίο"
+
+#: includes/admin-i18n.php:274
+msgid "Wrong email"
+msgstr "Λάθος email"
+
+#: includes/admin-i18n.php:275
+msgid "Short phone number"
+msgstr "Μικρό τηλέφωνο"
+
+#: includes/admin-i18n.php:276
+msgid "No consent"
+msgstr "Χωρίς συγκατάθεση"
+
+#: includes/admin-i18n.php:277
+msgid "Could not send"
+msgstr "Αποτυχία αποστολής"
+
+#: includes/admin-i18n.php:278
+msgid "Too many requests"
+msgstr "Πολλά αιτήματα"
+
+#: includes/admin-i18n.php:281
+msgid "Form changed meanwhile"
+msgstr "Η φόρμα άλλαξε στο μεταξύ"
+
+#: includes/admin-i18n.php:282
+msgid "Thank you"
+msgstr "Ευχαριστία"
+
+#: includes/admin-i18n.php:283
+msgid "Followed by the first name."
+msgstr "Ακολουθεί το μικρό όνομα."
+
+#: includes/admin-i18n.php:284
+msgid "Word \"Request\" before the number"
+msgstr "Λέξη «Αίτημα» πριν τον αριθμό"
+
+#: includes/admin-i18n.php:285
+msgid "Thank-you message"
+msgstr "Μήνυμα ευχαριστίας"
+
+#: includes/admin-i18n.php:286
+msgid "{where} becomes the phone or the email."
+msgstr "Το {where} γίνεται το τηλέφωνο ή το email."
+
+#: includes/admin-i18n.php:287
+msgid "Text about the PDF"
+msgstr "Κείμενο για το PDF"
+
+#: includes/admin-i18n.php:288
+msgid "PDF button"
+msgstr "Κουμπί PDF"
+
+#: includes/admin-i18n.php:289
+msgid "New request link"
+msgstr "Σύνδεσμος νέου αιτήματος"
+
+#: includes/admin-i18n.php:290
+msgid "PDF · title"
+msgstr "PDF · τίτλος"
+
+#: includes/admin-i18n.php:291
+msgid "PDF · service section"
+msgstr "PDF · ενότητα υπηρεσίας"
+
+#: includes/admin-i18n.php:292
+msgid "PDF · \"what you need\""
+msgstr "PDF · «τι χρειάζεστε»"
+
+#: includes/admin-i18n.php:293
+msgid "PDF · contact section"
+msgstr "PDF · ενότητα επικοινωνίας"
+
+#: includes/admin-i18n.php:294
+msgid "PDF · \"contact by\""
+msgstr "PDF · «επικοινωνία με»"
+
+#: includes/admin-i18n.php:295
+msgid "PDF · file name"
+msgstr "PDF · όνομα αρχείου"
+
+#: includes/admin-i18n.php:296
+msgid "Latin letters only; the number is added."
+msgstr "Μόνο λατινικοί χαρακτήρες· ο αριθμός μπαίνει αυτόματα."
+
+#: includes/admin-i18n.php:299
+msgid "An email to your team for every new request. Customers get no email: they download the PDF."
+msgstr "Ένα email στην ομάδα σας για κάθε νέο αίτημα. Ο πελάτης δεν λαμβάνει email: κατεβάζει το PDF."
+
+#: includes/admin-i18n.php:300
+msgid "Email for new requests"
+msgstr "Email για νέα αιτήματα"
+
+#: includes/admin-i18n.php:301
+msgid "Every request is always kept here, with or without an email."
+msgstr "Κάθε αίτημα αποθηκεύεται πάντα εδώ, με ή χωρίς email."
+
+#: includes/admin-i18n.php:302
+msgid "Send an email for every new request"
+msgstr "Αποστολή email για κάθε νέο αίτημα"
+
+#: includes/admin-i18n.php:303
+msgid "With all the answers and a button that opens it here."
+msgstr "Με όλες τις απαντήσεις και κουμπί που το ανοίγει εδώ."
+
+#: includes/admin-i18n.php:304
+msgid "Recipients"
+msgstr "Παραλήπτες"
+
+#: includes/admin-i18n.php:305
+msgid "Type an email address and press Enter. You can add several."
+msgstr "Γράψτε ένα email και πατήστε Enter. Μπορείτε να βάλετε περισσότερα."
+
+#: includes/admin-i18n.php:306
+msgid "e.g. info@example.com"
+msgstr "π.χ. info@example.gr"
+
+#. translators: %s: email address
+#: includes/admin-i18n.php:308
+#, php-format
+msgid "No recipient yet: emails go to the site administrator (%s)."
+msgstr "Δεν υπάρχει ακόμα παραλήπτης: τα email πηγαίνουν στον διαχειριστή του site (%s)."
+
+#. translators: %s: email address
+#: includes/admin-i18n.php:310
+#, php-format
+msgid "Remove %s"
+msgstr "Αφαίρεση %s"
+
+#: includes/admin-i18n.php:311
+msgid "This email does not look right."
+msgstr "Το email δεν φαίνεται σωστό."
+
+#: includes/admin-i18n.php:312
+msgid "Email subject"
+msgstr "Θέμα email"
+
+#: includes/admin-i18n.php:313
+msgid "{service}, {name} and {ref} are filled in automatically."
+msgstr "Τα {service}, {name} και {ref} συμπληρώνονται αυτόματα."
+
+#: includes/admin-i18n.php:314
+msgid "PDF attachment"
+msgstr "Συνημμένο PDF"
+
+#: includes/admin-i18n.php:315
+msgid "The same PDF the customer downloads, with your logo."
+msgstr "Το ίδιο PDF που κατεβάζει ο πελάτης, με το logo σας."
+
+#: includes/admin-i18n.php:316
+msgid "Attach the PDF to the email"
+msgstr "Επισύναψη του PDF στο email"
+
+#: includes/admin-i18n.php:317
+msgid "Made on the server, in the language the customer used."
+msgstr "Φτιάχνεται στον server, στη γλώσσα που χρησιμοποίησε ο πελάτης."
+
+#: includes/admin-i18n.php:318
+msgid "This server cannot make PDFs (it needs the PHP GD extension with FreeType), so emails go without one."
+msgstr "Αυτός ο server δεν μπορεί να φτιάξει PDF (χρειάζεται την επέκταση GD της PHP με FreeType), οπότε τα email φεύγουν χωρίς PDF."
+
+#: includes/admin-i18n.php:319
+msgid "Delivery"
+msgstr "Αποστολή"
+
+#: includes/admin-i18n.php:320
+msgid "So that emails do not end up in spam."
+msgstr "Για να μην πηγαίνουν τα email στα spam."
+
+#. translators: %s: plugin name
+#: includes/admin-i18n.php:322
+#, php-format
+msgid "Emails are sent through %s"
+msgstr "Τα email στέλνονται μέσω %s"
+
+#: includes/admin-i18n.php:323
+msgid "Emails are sent through a custom mail setup"
+msgstr "Τα email στέλνονται μέσω προσαρμοσμένης ρύθμισης"
+
+#: includes/admin-i18n.php:324
+msgid "Send a test email to make sure it arrives."
+msgstr "Στείλτε ένα δοκιμαστικό για να βεβαιωθείτε ότι φτάνουν."
+
+#: includes/admin-i18n.php:325
+msgid "No SMTP plugin found"
+msgstr "Δεν βρέθηκε plugin για SMTP"
+
+#: includes/admin-i18n.php:326
+msgid "On its own, WordPress sends emails that often get lost. Install FluentSMTP or WP Mail SMTP and connect it to your email account. The domain also needs SPF, DKIM and DMARC records."
+msgstr "Το WordPress μόνο του στέλνει email που συχνά χάνονται. Εγκαταστήστε το FluentSMTP ή το WP Mail SMTP και συνδέστε το με το email σας. Χρειάζονται επίσης οι εγγραφές SPF, DKIM και DMARC στο domain."
+
+#: includes/admin-i18n.php:327
+msgid "Send a test email"
+msgstr "Αποστολή δοκιμαστικού email"
+
+#. translators: %s: email addresses
+#: includes/admin-i18n.php:329
+#, php-format
+msgid "Test email sent to %s. Check the inbox (and spam)."
+msgstr "Το δοκιμαστικό στάλθηκε στο %s. Ελέγξτε τα εισερχόμενα (και τα spam)."
+
+#: includes/admin-i18n.php:330
+msgid "WordPress could not send the email. Check the SMTP settings."
+msgstr "Το WordPress δεν κατάφερε να στείλει το email. Ελέγξτε τις ρυθμίσεις SMTP."
+
+#: includes/admin-i18n.php:333
+msgid "What goes into the PDF that customers download."
+msgstr "Τι μπαίνει στο PDF που κατεβάζει ο πελάτης."
+
+#: includes/admin-i18n.php:334
+msgid "Logo"
+msgstr "Logo"
+
+#: includes/admin-i18n.php:335
+msgid "PNG or JPG from your Media Library, ideally wide with a transparent background."
+msgstr "PNG ή JPG από τα Πολυμέσα, ιδανικά οριζόντιο με διάφανο φόντο."
+
+#: includes/admin-i18n.php:336
+msgid "The Smartup logo (default). Choose another one to replace it."
+msgstr "Το logo της Smartup (προεπιλογή). Διαλέξτε άλλο για να το αντικαταστήσετε."
+
+#: includes/admin-i18n.php:337
+msgid "Choose logo"
+msgstr "Επιλογή logo"
+
+#: includes/admin-i18n.php:338
+msgid "Change logo"
+msgstr "Αλλαγή logo"
+
+#: includes/admin-i18n.php:339
+msgid "Use this logo"
+msgstr "Χρήση αυτού του logo"
+
+#: includes/admin-i18n.php:340
+msgid "Company details"
+msgstr "Στοιχεία εταιρείας"
+
+#: includes/admin-i18n.php:341
+msgid "Shown under the logo. Empty lines are left out."
+msgstr "Εμφανίζονται κάτω από το logo. Όσα μείνουν κενά δεν εμφανίζονται."
+
+#: includes/admin-i18n.php:342
+msgid "Company name"
+msgstr "Επωνυμία"
+
+#: includes/admin-i18n.php:343
+msgid "Website"
+msgstr "Ιστοσελίδα"
+
+#: includes/admin-i18n.php:344
+msgid "Address"
+msgstr "Διεύθυνση"
+
+#: includes/admin-i18n.php:347
+msgid "VAT number / tax office"
+msgstr "ΑΦΜ / ΔΟΥ"
+
+#: includes/admin-i18n.php:348
+msgid "Footer"
+msgstr "Υποσέλιδο"
+
+#: includes/admin-i18n.php:349
+msgid "Small line at the bottom of every page. Empty: the reply time."
+msgstr "Μικρή γραμμή στο κάτω μέρος κάθε σελίδας. Αν μείνει κενό: ο χρόνος απάντησης."
+
+#: includes/admin-i18n.php:350
+msgid "Request number prefix"
+msgstr "Πρόθεμα αριθμού αιτήματος"
+
+#: includes/admin-i18n.php:351
+msgid "Up to 6 letters or digits, e.g. SU gives SU-2026-0148. Applies to new requests."
+msgstr "Έως 6 λατινικά γράμματα ή ψηφία, π.χ. το SU δίνει SU-2026-0148. Ισχύει για τα νέα αιτήματα."
+
+#: includes/admin-i18n.php:352
+msgid "Sample"
+msgstr "Δείγμα"
+
+#: includes/admin-i18n.php:353
+msgid "A PDF with example answers and your current (even unsaved) settings."
+msgstr "Ένα PDF με ενδεικτικές απαντήσεις και τις τρέχουσες ρυθμίσεις σας (ακόμα και μη αποθηκευμένες)."
+
+#. translators: %s: language name
+#: includes/admin-i18n.php:355
+#, php-format
+msgid "Sample in %s"
+msgstr "Δείγμα στα %s"
+
+#: includes/admin-i18n.php:358
+msgid "Colours of the form, and how to open it from anywhere on your site. Fonts come from your theme."
+msgstr "Τα χρώματα της φόρμας και πώς την ανοίγετε από οποιοδήποτε σημείο του site. Οι γραμματοσειρές έρχονται από το θέμα σας."
+
+#: includes/admin-i18n.php:359
+msgid "Colours"
+msgstr "Χρώματα"
+
+#: includes/admin-i18n.php:360
+msgid "Buttons, selected answers, progress and the side panel."
+msgstr "Κουμπιά, επιλεγμένες απαντήσεις, πρόοδος και πλαϊνό μενού."
+
+#: includes/admin-i18n.php:361
+msgid "Buttons and selections"
+msgstr "Κουμπιά και επιλογές"
+
+#: includes/admin-i18n.php:362
+msgid "Text on buttons"
+msgstr "Κείμενο στα κουμπιά"
+
+#: includes/admin-i18n.php:363
+msgid "Side panel"
+msgstr "Πλαϊνό μενού"
+
+#: includes/admin-i18n.php:364
+msgid "Opening the form"
+msgstr "Άνοιγμα της φόρμας"
+
+#: includes/admin-i18n.php:365
+msgid "Put the link on a button or menu item. The language follows the page (WPML)."
+msgstr "Βάλτε το link σε κουμπί ή στο μενού. Η γλώσσα ακολουθεί τη σελίδα (WPML)."
+
+#: includes/admin-i18n.php:366
+msgid "Link for a button or menu item"
+msgstr "Link για κουμπί ή μενού"
+
+#: includes/admin-i18n.php:367
+msgid "CSS class for any element"
+msgstr "Κλάση CSS για οποιοδήποτε στοιχείο"
+
+#: includes/admin-i18n.php:368
+msgid "In a WordPress menu"
+msgstr "Στο μενού του WordPress"
+
+#: includes/admin-i18n.php:369
+msgid "Works with the Ohio mobile menu and One Page Menu too."
+msgstr "Δουλεύει και με το κινητό μενού και το One Page Menu του Ohio."
+
+#: includes/admin-i18n.php:370
+msgid "Appearance → Menus: add a Custom Link with URL #smartup-inquiry. Or, with “CSS Classes” ticked in Screen Options, give any menu item one of these classes."
+msgstr "Εμφάνιση → Μενού: προσθέστε «Προσαρμοσμένο σύνδεσμο» με URL #smartup-inquiry. Ή, αφού τσεκάρετε «Κλάσεις CSS» στις Επιλογές προβολής, δώστε σε οποιοδήποτε στοιχείο μία από αυτές τις κλάσεις."
+
+#: includes/admin-i18n.php:371
+msgid "CSS class for the menu item"
+msgstr "Κλάση CSS για το στοιχείο του μενού"
+
+#: includes/admin-i18n.php:372
+msgid "…with a service (or a language: js-inquiry-en)"
+msgstr "…με έτοιμη υπηρεσία (ή γλώσσα: js-inquiry-en)"
+
+#: includes/admin-i18n.php:373
+msgid "With a service already chosen"
+msgstr "Με έτοιμη υπηρεσία"
+
+#: includes/admin-i18n.php:374
+msgid "Opens straight at step 2 of that service."
+msgstr "Ανοίγει κατευθείαν στο βήμα 2 της υπηρεσίας."
+
+#: includes/admin-i18n.php:375
+msgid "No service is switched on."
+msgstr "Καμία υπηρεσία δεν είναι ενεργή."
+
+#: includes/admin-i18n.php:376
+msgid "In a specific language"
+msgstr "Σε συγκεκριμένη γλώσσα"
+
+#: includes/admin-i18n.php:377
+msgid "Only if you ever need to override the page language."
+msgstr "Μόνο αν χρειαστεί ποτέ να παρακάμψετε τη γλώσσα της σελίδας."
+
+#. translators: %s: language name
+#: includes/admin-i18n.php:379
+#, php-format
+msgid "Always in %s"
+msgstr "Πάντα στα %s"
+
+#: includes/admin-i18n.php:380
+msgid "Service and language together"
+msgstr "Υπηρεσία και γλώσσα μαζί"
+
+#: includes/admin-i18n.php:404
+msgid "Consent, how long requests are kept, and spam protection."
+msgstr "Συγκατάθεση, διάρκεια αποθήκευσης και προστασία από spam."
+
+#: includes/admin-i18n.php:405
+msgid "Privacy policy"
+msgstr "Πολιτική απορρήτου"
+
+#: includes/admin-i18n.php:406
+msgid "The page linked from the consent checkbox, per language."
+msgstr "Η σελίδα στο checkbox συγκατάθεσης, ανά γλώσσα."
+
+#. translators: %s: page title
+#: includes/admin-i18n.php:408
+#, php-format
+msgid "The WordPress privacy page (%s)"
+msgstr "Η σελίδα απορρήτου του WordPress (%s)"
+
+#: includes/admin-i18n.php:409
+msgid "No page (plain text, no link)"
+msgstr "Καμία σελίδα (απλό κείμενο, χωρίς link)"
+
+#: includes/admin-i18n.php:410
+msgid "Automatic deletion"
+msgstr "Αυτόματη διαγραφή"
+
+#: includes/admin-i18n.php:411
+msgid "Older requests are deleted on their own after this period."
+msgstr "Τα παλιότερα αιτήματα σβήνονται μόνα τους μετά από αυτό το διάστημα."
+
+#: includes/admin-i18n.php:412
+msgid "Never"
+msgstr "Ποτέ"
+
+#. translators: %d: number of months
+#: includes/admin-i18n.php:414
+#, php-format
+msgid "After %d months"
+msgstr "Μετά από %d μήνες"
+
+#: includes/admin-i18n.php:415
+#: includes/store.php:232
+msgid "IP address"
+msgstr "Διεύθυνση IP"
+
+#: includes/admin-i18n.php:416
+msgid "Helps with spam, but it is personal data."
+msgstr "Βοηθά στο spam, αλλά είναι προσωπικό δεδομένο."
+
+#: includes/admin-i18n.php:417
+msgid "Keep the IP address with each request"
+msgstr "Αποθήκευση IP με κάθε αίτημα"
+
+#: includes/admin-i18n.php:418
+msgid "Off: the address is only used for the request limit and is not kept."
+msgstr "Κλειστό: η IP χρησιμοποιείται μόνο για το όριο αιτημάτων και δεν αποθηκεύεται."
+
+#: includes/admin-i18n.php:419
+msgid "Spam protection"
+msgstr "Προστασία από spam"
+
+#: includes/admin-i18n.php:420
+msgid "No CAPTCHA for your visitors."
+msgstr "Χωρίς CAPTCHA για τον επισκέπτη."
+
+#: includes/admin-i18n.php:421
+msgid "On"
+msgstr "Ενεργή"
+
+#: includes/admin-i18n.php:422
+msgid "Hidden trap field, a signed token that must be at least a few seconds old, and at most 5 requests an hour from the same connection."
+msgstr "Κρυφό πεδίο παγίδα, υπογεγραμμένο token που πρέπει να έχει ηλικία τουλάχιστον λίγων δευτερολέπτων, και έως 5 αιτήματα την ώρα από την ίδια σύνδεση."
+
+#: includes/admin-i18n.php:423
+msgid "WordPress tools"
+msgstr "Εργαλεία του WordPress"
+
+#: includes/admin-i18n.php:424
+msgid "Export and erase personal data on request."
+msgstr "Εξαγωγή και διαγραφή προσωπικών δεδομένων κατόπιν αιτήματος."
+
+#: includes/admin-i18n.php:425
+msgid "Requests appear in Tools → Export Personal Data / Erase Personal Data, found by the customer’s email."
+msgstr "Τα αιτήματα εμφανίζονται στα Εργαλεία → Εξαγωγή / Διαγραφή προσωπικών δεδομένων, με βάση το email του πελάτη."
+
+#: includes/admin.php:70
+msgid "SmartInquiry needs JavaScript."
+msgstr "Το SmartInquiry χρειάζεται JavaScript."
+
+#: includes/admin.php:166
+#: includes/admin.php:381
+#: includes/admin.php:399
+#: includes/admin.php:451
+msgid "You are not allowed to do this."
+msgstr "Δεν έχετε δικαίωμα για αυτή την ενέργεια."
+
+#: includes/admin.php:233
+#: includes/admin.php:385
+msgid "This request no longer exists."
+msgstr "Αυτό το αίτημα δεν υπάρχει πια."
+
+#: includes/admin.php:289
+msgid "Could not save. Please try again."
+msgstr "Η αποθήκευση απέτυχε. Δοκιμάστε ξανά."
+
+#. translators: %s: site name
+#: includes/admin.php:311
+#, php-format
+msgid "SmartInquiry test email from %s"
+msgstr "Δοκιμαστικό email του SmartInquiry από %s"
+
+#: includes/admin.php:312
+msgid "If you can read this, new requests will reach this address."
+msgstr "Αν διαβάζετε αυτό το μήνυμα, τα νέα αιτήματα θα φτάνουν σε αυτή τη διεύθυνση."
+
+#: includes/admin.php:390
+#: includes/admin.php:435
+msgid "The server could not make the PDF."
+msgstr "Ο server δεν μπόρεσε να φτιάξει το PDF."
+
+#: includes/admin.php:469
+#: includes/store.php:224
+msgid "Reference"
+msgstr "Αριθμός"
+
+#: includes/admin.php:469
+#: includes/store.php:226
+msgid "Name"
+msgstr "Όνομα"
+
+#: includes/admin.php:469
+#: includes/store.php:229
+#: includes/submit.php:503
+msgid "Company"
+msgstr "Εταιρεία"
+
+#: includes/admin.php:469
+msgid "Answers"
+msgstr "Απαντήσεις"
+
+#: includes/store.php:216
+#: includes/store.php:250
+msgid "SmartInquiry requests"
+msgstr "Αιτήματα SmartInquiry"
+
+#: includes/store.php:240
+msgid "Quote requests"
+msgstr "Αιτήματα προσφοράς"
+
+#: includes/submit.php:513
+msgid "Open in the admin"
+msgstr "Άνοιγμα στο admin"
+
+#: includes/admin-i18n.php:381
+msgid "Floating button"
+msgstr "Σταθερό κουμπί"
+
+#: includes/admin-i18n.php:382
+msgid "A button in a bottom corner of every page that opens the form."
+msgstr "Κουμπί σε μια κάτω γωνία κάθε σελίδας, που ανοίγει τη φόρμα."
+
+#: includes/admin-i18n.php:383
+msgid "Show the floating button"
+msgstr "Εμφάνιση του σταθερού κουμπιού"
+
+#: includes/admin-i18n.php:384
+msgid "It appears once the visitor scrolls past the page’s own form buttons (e.g. the one in the hero) and steps aside while one of them is on screen, so the two are never seen together."
+msgstr "Εμφανίζεται μόλις ο επισκέπτης περάσει με το scroll τα κουμπιά της σελίδας που ανοίγουν τη φόρμα (π.χ. αυτό στο hero) και κρύβεται όσο κάποιο από αυτά φαίνεται στην οθόνη, ώστε να μη φαίνονται ποτέ και τα δύο μαζί."
+
+#: includes/admin-i18n.php:385
+msgid "Position"
+msgstr "Θέση"
+
+#: includes/admin-i18n.php:386
+msgid "Keep it away from other floating items, e.g. SmartBanner is on the right by default."
+msgstr "Κράτησέ το μακριά από άλλα σταθερά στοιχεία, π.χ. το SmartBanner είναι από προεπιλογή δεξιά."
+
+#: includes/admin-i18n.php:387
+msgid "Bottom left"
+msgstr "Κάτω αριστερά"
+
+#: includes/admin-i18n.php:388
+msgid "Bottom right"
+msgstr "Κάτω δεξιά"
+
+#: includes/admin-i18n.php:389
+msgid "Button text"
+msgstr "Κείμενο κουμπιού"
+
+#: includes/admin-i18n.php:390
+msgid "Short, up to 40 characters, per language."
+msgstr "Σύντομο, έως 40 χαρακτήρες, ανά γλώσσα."
+
+#: includes/admin-i18n.php:391
+msgid "On phones"
+msgstr "Στο κινητό"
+
+#: includes/admin-i18n.php:392
+msgid "Screens narrower than 780px."
+msgstr "Οθόνες στενότερες από 780px."
+
+#: includes/admin-i18n.php:394
+msgid "Hidden"
+msgstr "Κρυφό"
+
+#: includes/admin-i18n.php:398
+msgid "Hide on these pages"
+msgstr "Απόκρυψη σε αυτές τις σελίδες"
+
+#: includes/admin-i18n.php:399
+msgid "E.g. the contact page. Applies to their translations too."
+msgstr "Π.χ. η σελίδα επικοινωνίας. Ισχύει και για τις μεταφράσεις τους."
+
+#: includes/admin-i18n.php:400
+msgid "Add a page…"
+msgstr "Προσθήκη σελίδας…"
+
+#: includes/admin-i18n.php:401
+msgid "Shown on every page."
+msgstr "Εμφανίζεται σε όλες τις σελίδες."
+
+#: includes/admin-i18n.php:393
+msgid "Shown"
+msgstr "Εμφανίζεται"
+
+#: includes/admin-i18n.php:395
+msgid "Background and text of the button."
+msgstr "Φόντο και κείμενο του κουμπιού."
+
+#: includes/admin-i18n.php:396
+msgid "Background"
+msgstr "Φόντο"
+
+#: includes/admin-i18n.php:397
+msgid "Text"
+msgstr "Κείμενο"
+
+#: includes/admin-i18n.php:279
+msgid "Security check not completed"
+msgstr "Ο έλεγχος ασφαλείας δεν ολοκληρώθηκε"
+
+#: includes/admin-i18n.php:280
+msgid "Security check unavailable"
+msgstr "Ο έλεγχος ασφαλείας δεν είναι διαθέσιμος"
+
+#: includes/admin-i18n.php:426
+msgid "Cloudflare Turnstile"
+msgstr "Cloudflare Turnstile"
+
+#: includes/admin-i18n.php:427
+msgid "An extra check by Cloudflare right above “Send request”."
+msgstr "Επιπλέον έλεγχος της Cloudflare, ακριβώς πάνω από το «Αποστολή αιτήματος»."
+
+#: includes/admin-i18n.php:428
+msgid "Ask for the Turnstile check"
+msgstr "Ζήτα τον έλεγχο Turnstile"
+
+#: includes/admin-i18n.php:429
+msgid "Cloudflare’s script loads only when the visitor reaches the last step. If it can’t be checked, the request is not sent and the visitor is asked to try again."
+msgstr "Το script της Cloudflare φορτώνει μόνο όταν ο επισκέπτης φτάσει στο τελευταίο βήμα. Αν ο έλεγχος δεν μπορεί να γίνει, το αίτημα δεν στέλνεται και ο επισκέπτης καλείται να δοκιμάσει ξανά."
+
+#: includes/admin-i18n.php:430
+msgid "Using the keys entered here"
+msgstr "Χρησιμοποιούνται τα κλειδιά που έβαλες εδώ"
+
+#: includes/admin-i18n.php:431
+msgid "They take priority over the keys of Contact Form 7."
+msgstr "Έχουν προτεραιότητα έναντι των κλειδιών του Contact Form 7."
+
+#: includes/admin-i18n.php:432
+msgid "Using the keys of Contact Form 7"
+msgstr "Χρησιμοποιούνται τα κλειδιά του Contact Form 7"
+
+#. translators: %s: Turnstile site key
+#: includes/admin-i18n.php:434
+#, php-format
+msgid "Found in Contact Form 7 → Integration (Site Key %s). They are only read, never changed."
+msgstr "Βρέθηκαν στο Contact Form 7 → Integration (Site Key %s). Μόνο διαβάζονται, δεν αλλάζουν ποτέ."
+
+#: includes/admin-i18n.php:435
+msgid "No keys found"
+msgstr "Δεν βρέθηκαν κλειδιά"
+
+#: includes/admin-i18n.php:436
+msgid "Add them in Contact Form 7 → Integration, or below. Until then the check is not shown and the form works without it."
+msgstr "Πρόσθεσέ τα στο Contact Form 7 → Integration ή πιο κάτω. Μέχρι τότε ο έλεγχος δεν εμφανίζεται και η φόρμα δουλεύει χωρίς αυτόν."
+
+#: includes/admin-i18n.php:437
+msgid "Keys of your own (optional)"
+msgstr "Δικά σου κλειδιά (προαιρετικά)"
+
+#: includes/admin-i18n.php:438
+msgid "Only if you want different keys from Contact Form 7. Leave both empty to use those."
+msgstr "Μόνο αν θέλεις διαφορετικά κλειδιά από του Contact Form 7. Άφησε και τα δύο κενά για να χρησιμοποιούνται εκείνα."
+
+#: includes/admin-i18n.php:439
+msgid "Saved (type to replace)"
+msgstr "Αποθηκευμένο (γράψε για να το αντικαταστήσεις)"
+
+#: includes/admin-i18n.php:440
+msgid "Remove the saved Secret Key"
+msgstr "Αφαίρεση του αποθηκευμένου Secret Key"
+
+#: includes/admin-i18n.php:22
+msgid "Access"
+msgstr "Πρόσβαση"
+
+#: includes/admin-i18n.php:23
+msgid "Change password"
+msgstr "Αλλαγή κωδικού"
+
+#: includes/admin-i18n.php:24
+msgid "Log out"
+msgstr "Αποσύνδεση"
+
+#: includes/admin-i18n.php:26
+msgid "Let people work on the requests without the rest of WordPress."
+msgstr "Δώσε σε συνεργάτες πρόσβαση στα αιτήματα, χωρίς το υπόλοιπο WordPress."
+
+#: includes/admin-i18n.php:27
+msgid "Entry link"
+msgstr "Link εισόδου"
+
+#: includes/admin-i18n.php:28
+msgid "Send it to the people below. It asks them to sign in and opens the requests straight away."
+msgstr "Στείλ' το στα άτομα πιο κάτω. Τους ζητάει να συνδεθούν και ανοίγει κατευθείαν τα αιτήματα."
+
+#: includes/admin-i18n.php:29
+msgid "Sign in and go to the requests"
+msgstr "Σύνδεση και κατευθείαν στα αιτήματα"
+
+#: includes/admin-i18n.php:30
+msgid "No entry link. People can still sign in at the usual WordPress login."
+msgstr "Χωρίς link εισόδου. Μπορούν να συνδεθούν από την κανονική σελίδα σύνδεσης του WordPress."
+
+#: includes/admin-i18n.php:31
+msgid "A page already uses this address"
+msgstr "Υπάρχει ήδη σελίδα σε αυτή τη διεύθυνση"
+
+#: includes/admin-i18n.php:32
+msgid "The link would hide it. Choose another word."
+msgstr "Το link θα την έκρυβε. Διάλεξε άλλη λέξη."
+
+#: includes/admin-i18n.php:33
+msgid "Roles"
+msgstr "Ρόλοι"
+
+#: includes/admin-i18n.php:34
+msgid "Given per person in Users. Neither role sees anything else of WordPress."
+msgstr "Δίνονται ανά άτομο στους Χρήστες. Κανένας από τους δύο δεν βλέπει τίποτα άλλο από το WordPress."
+
+#: includes/admin-i18n.php:35
+msgid "Requests: read, status, notes, PDF and CSV, delete."
+msgstr "Αιτήματα: προβολή, κατάσταση, σημειώσεις, PDF και CSV, διαγραφή."
+
+#: includes/admin-i18n.php:36
+msgid "Everything above, plus every settings screen of SmartInquiry (not this one)."
+msgstr "Ό,τι και ο προηγούμενος, συν όλες τις ρυθμίσεις του SmartInquiry (εκτός από αυτή την οθόνη)."
+
+#: includes/admin-i18n.php:37
+msgid "People with access"
+msgstr "Άτομα με πρόσβαση"
+
+#: includes/admin-i18n.php:38
+msgid "Change a role or remove access from the person’s page in Users. Administrators always have full access."
+msgstr "Αλλάζεις ρόλο ή κόβεις την πρόσβαση από τη σελίδα του ατόμου στους Χρήστες. Οι administrators έχουν πάντα πλήρη πρόσβαση."
+
+#: includes/admin-i18n.php:39
+msgid "Nobody yet. Add a user and choose one of the two SmartInquiry roles."
+msgstr "Κανείς ακόμα. Πρόσθεσε χρήστη και διάλεξε έναν από τους δύο ρόλους του SmartInquiry."
+
+#: includes/admin-i18n.php:40
+msgid "Add a person"
+msgstr "Προσθήκη ατόμου"
+
+#: includes/admin-i18n.php:41
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+#: includes/access.php:29
+msgid "SmartInquiry – Requests"
+msgstr "SmartInquiry – Αιτήματα"
+
+#: includes/access.php:30
+msgid "SmartInquiry – Requests & settings"
+msgstr "SmartInquiry – Αιτήματα & ρυθμίσεις"
+
+#: includes/admin-i18n.php:67
+msgid "Desktop notifications"
+msgstr "Ειδοποιήσεις στην επιφάνεια εργασίας"
+
+#: includes/admin-i18n.php:68
+msgid "A notification on this computer for every new request, while SmartInquiry is open in a tab (it can be in the background)."
+msgstr "Ειδοποίηση σε αυτόν τον υπολογιστή για κάθε νέο αίτημα, όσο το SmartInquiry είναι ανοιχτό σε μια καρτέλα (μπορεί να είναι στο παρασκήνιο)."
+
+#: includes/admin-i18n.php:69
+msgid "Sound"
+msgstr "Ήχος"
+
+#: includes/admin-i18n.php:70
+msgid "A short chime with each new request."
+msgstr "Ένας σύντομος ήχος με κάθε νέο αίτημα."
+
+#: includes/admin-i18n.php:71
+msgid "This browser cannot show notifications."
+msgstr "Αυτός ο browser δεν μπορεί να δείξει ειδοποιήσεις."
+
+#: includes/admin-i18n.php:72
+msgid "Notifications need the site to open with https://."
+msgstr "Οι ειδοποιήσεις χρειάζονται το site να ανοίγει με https://."
+
+#: includes/admin-i18n.php:73
+msgid "The browser blocks notifications for this site. Allow them from the icon next to the address bar, then switch them on again."
+msgstr "Ο browser μπλοκάρει τις ειδοποιήσεις για αυτό το site. Επίτρεψέ τες από το εικονίδιο δίπλα στη διεύθυνση και ξαναάνοιξέ τες."
+
+#: includes/admin-i18n.php:74
+msgid "Switch on again and choose “Allow” when the browser asks."
+msgstr "Άνοιξέ τες ξανά και διάλεξε «Αποδοχή» όταν ρωτήσει ο browser."
+
+#: includes/admin-i18n.php:75
+msgid "Send a test notification"
+msgstr "Δοκιμαστική ειδοποίηση"
+
+#: includes/admin-i18n.php:76
+msgid "Test notification"
+msgstr "Δοκιμαστική ειδοποίηση"
+
+#. translators: %s: request number, e.g. SU-2026-0148
+#: includes/admin-i18n.php:78
+#, php-format
+msgid "New request %s"
+msgstr "Νέο αίτημα %s"
+
+#: includes/admin-i18n.php:79
+msgid "Desktop notifications are on in this browser."
+msgstr "Οι ειδοποιήσεις είναι ανοιχτές σε αυτόν τον browser."
+
+#: includes/admin-i18n.php:80
+msgid "Notification sound"
+msgstr "Ήχος ειδοποίησης"
+
+#: includes/admin-i18n.php:81
+msgid "Confirmation"
+msgstr "Επιβεβαίωση"
+
+#: includes/admin-i18n.php:82
+msgid "Ding-dong"
+msgstr "Ντιν-ντον"
+
+#: includes/admin-i18n.php:83
+msgid "Listen"
+msgstr "Ακρόαση"
+
+#: includes/admin-i18n.php:84
+msgid "You hear the sound but see no notification? Allow notifications for your browser in the computer’s settings (Windows: Settings → System → Notifications; Mac: System Settings → Notifications)."
+msgstr "Ακούς τον ήχο αλλά δεν βλέπεις ειδοποίηση; Επίτρεψε τις ειδοποιήσεις για τον browser σου στις ρυθμίσεις του υπολογιστή (Windows: Ρυθμίσεις → Σύστημα → Ειδοποιήσεις· Mac: Ρυθμίσεις συστήματος → Ειδοποιήσεις)."

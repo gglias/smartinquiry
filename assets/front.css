@@ -1,0 +1,472 @@
+/* SmartInquiry form. Everything is scoped under #smartinquiry (id specificity), so theme styles for buttons,
+   inputs and headings can't leak in. Colours come from the settings as CSS variables set by front.js. */
+
+#smartinquiry {
+	--smi-accent: #46e9d4;
+	--smi-accent-text: #000;
+	--smi-accent-soft: rgba(70, 233, 212, 0.14);
+	--smi-accent-deep: #0b7d6f;
+	--smi-panel: #fafafa;
+	--smi-paper: #fff;
+	--smi-text: #161614;
+	--smi-muted: #6b6b64;
+	--smi-line: #e4e4dd;
+	--smi-line-2: #efefe9;
+	--smi-field: #fafaf7;
+	--smi-danger: #c43d3d;
+	--smi-logo: #042727;
+
+	position: fixed;
+	inset: 0;
+	z-index: 2147483000;
+	display: grid;
+	/* One column that can never grow past the screen (an auto column would widen to the longest row of choices). */
+	grid-template-columns: minmax(0, 1fr);
+	place-items: center;
+	padding: 24px 20px;
+	background: rgba(20, 20, 19, 0.46);
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+	color: var(--smi-text);
+	font-family: inherit;
+	font-size: 15px;
+	line-height: 1.55;
+	text-align: left;
+	-webkit-font-smoothing: antialiased;
+	animation: smi-fade 0.2s ease-out;
+}
+#smartinquiry[hidden], #smartinquiry [hidden] { display: none !important; }
+#smartinquiry *, #smartinquiry *::before, #smartinquiry *::after { box-sizing: border-box; }
+#smartinquiry h2, #smartinquiry p, #smartinquiry ol, #smartinquiry dl, #smartinquiry dd, #smartinquiry fieldset, #smartinquiry legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: inherit;
+	letter-spacing: normal;
+	text-transform: none;
+}
+#smartinquiry svg { flex: none; }
+#smartinquiry button {
+	margin: 0;
+	min-width: 0;
+	min-height: 0;
+	font: inherit;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-transform: none;
+	text-shadow: none;
+	text-decoration: none;
+	cursor: pointer;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+#smartinquiry :focus-visible { outline: 2px solid var(--smi-text); outline-offset: 2px; }
+@keyframes smi-fade { from { opacity: 0; } }
+@keyframes smi-rise { from { opacity: 0; transform: translateY(14px) scale(0.985); } }
+@keyframes smi-step { from { opacity: 0; transform: translateX(10px); } }
+@media (prefers-reduced-motion: reduce) { #smartinquiry, #smartinquiry * { animation: none !important; transition: none !important; } }
+
+#smartinquiry .smi-modal {
+	position: relative;
+	display: grid;
+	grid-template-columns: 290px minmax(0, 1fr);
+	width: 100%;
+	max-width: 960px;
+	height: 100%;
+	max-height: 680px;
+	overflow: hidden;
+	border-radius: 28px;
+	background: var(--smi-paper);
+	box-shadow: 0 40px 90px -36px rgba(20, 20, 19, 0.5), 0 2px 8px rgba(20, 20, 19, 0.06);
+	animation: smi-rise 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Side panel */
+#smartinquiry .smi-side {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	min-height: 0;
+	padding: 26px 22px 22px;
+	background: var(--smi-panel);
+	border-right: 1px solid var(--smi-line);
+	overflow-y: auto;
+}
+#smartinquiry .smi-brand { display: flex; align-items: center; gap: 12px; }
+#smartinquiry .smi-mark {
+	display: grid;
+	place-items: center;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background: var(--smi-accent);
+	color: var(--smi-logo);
+}
+#smartinquiry .smi-mark svg { width: 16px; height: 20px; }
+#smartinquiry .smi-brand strong { display: block; font-size: 16px; font-weight: 700; line-height: 1.2; }
+#smartinquiry .smi-brand small { display: block; color: var(--smi-muted); font-size: 12.5px; }
+#smartinquiry .smi-steps { list-style: none; display: grid; gap: 2px; }
+#smartinquiry .smi-steps li {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 0;
+	padding: 8px 10px;
+	border-radius: 14px;
+	color: var(--smi-muted);
+	font-size: 14px;
+	font-weight: 600;
+}
+#smartinquiry .smi-steps li::before, #smartinquiry .smi-steps li::marker { content: none; }
+#smartinquiry .smi-steps .smi-n {
+	display: grid;
+	place-items: center;
+	flex: none;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	border: 1.5px solid rgba(22, 22, 20, 0.14);
+	font-size: 12px;
+	font-variant-numeric: tabular-nums;
+}
+#smartinquiry .smi-steps .smi-n svg { width: 14px; height: 14px; }
+#smartinquiry .smi-steps li.is-current { background: var(--smi-accent-soft); color: var(--smi-text); }
+#smartinquiry .smi-steps li.is-current .smi-n { border: 2px solid var(--smi-accent); color: var(--smi-text); }
+#smartinquiry .smi-steps li.is-done { color: var(--smi-text); }
+#smartinquiry .smi-steps li.is-done .smi-n { border-color: var(--smi-accent); background: var(--smi-accent); color: var(--smi-accent-text); }
+#smartinquiry .smi-steps li button {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	width: 100%;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: inherit;
+	font-weight: inherit;
+	text-align: left;
+}
+#smartinquiry .smi-sum { display: grid; gap: 10px; }
+#smartinquiry .smi-sum__h { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--smi-muted); }
+#smartinquiry .smi-sum dl { display: grid; gap: 9px; }
+#smartinquiry .smi-sum dt { font-size: 12px; color: var(--smi-muted); }
+#smartinquiry .smi-sum dd { margin-top: 1px; font-size: 13.5px; font-weight: 600; line-height: 1.4; overflow-wrap: anywhere; }
+#smartinquiry .smi-sum__empty { font-size: 13px; color: var(--smi-muted); }
+#smartinquiry .smi-side__foot { margin-top: auto; display: flex; gap: 8px; align-items: flex-start; font-size: 12.5px; color: var(--smi-muted); }
+#smartinquiry .smi-side__foot svg { width: 16px; height: 16px; margin-top: 1px; color: var(--smi-accent-deep); }
+
+/* Main panel */
+#smartinquiry .smi-main { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+#smartinquiry .smi-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 20px 24px 0 34px; }
+#smartinquiry .smi-count { font-size: 13px; font-weight: 700; color: var(--smi-muted); font-variant-numeric: tabular-nums; }
+#smartinquiry .smi-tools { position: relative; display: flex; align-items: center; gap: 8px; }
+#smartinquiry .smi-x {
+	display: grid;
+	place-items: center;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	border: 1px solid var(--smi-line);
+	border-radius: 50%;
+	background: var(--smi-paper);
+	color: var(--smi-text);
+}
+#smartinquiry .smi-x:hover { border-color: #cfcfc6; background: var(--smi-paper); color: var(--smi-text); }
+#smartinquiry .smi-x svg { width: 18px; height: 18px; }
+#smartinquiry .smi-clear {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	height: 40px;
+	padding: 0 14px;
+	border: 1px solid var(--smi-line);
+	border-radius: 999px;
+	background: var(--smi-paper);
+	color: var(--smi-muted);
+	font-size: 13.5px;
+	font-weight: 600;
+}
+#smartinquiry .smi-clear:hover:not(:disabled) { color: var(--smi-text); border-color: #cfcfc6; background: var(--smi-paper); }
+#smartinquiry .smi-clear:disabled { opacity: 0.45; cursor: default; }
+#smartinquiry .smi-clear svg { width: 16px; height: 16px; }
+#smartinquiry .smi-confirm {
+	position: absolute;
+	top: calc(100% + 8px);
+	right: 0;
+	z-index: 5;
+	display: grid;
+	gap: 12px;
+	width: 270px;
+	padding: 16px;
+	border: 1px solid var(--smi-line);
+	border-radius: 18px;
+	background: var(--smi-paper);
+	box-shadow: 0 18px 40px -18px rgba(20, 20, 19, 0.35);
+	font-size: 14px;
+	animation: smi-rise 0.18s ease-out;
+}
+#smartinquiry .smi-confirm strong { display: block; font-size: 14.5px; }
+#smartinquiry .smi-confirm span { display: block; color: var(--smi-muted); font-size: 13px; }
+#smartinquiry .smi-confirm__actions { display: flex; justify-content: flex-end; gap: 8px; }
+#smartinquiry .smi-bar { margin: 14px 34px 0; height: 4px; border-radius: 4px; background: var(--smi-line-2); overflow: hidden; }
+#smartinquiry .smi-bar span { display: block; height: 100%; width: 0; border-radius: 4px; background: var(--smi-accent); transition: width 0.35s cubic-bezier(0.2, 0.8, 0.2, 1); }
+#smartinquiry .smi-body { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 26px 34px 28px; }
+#smartinquiry .smi-foot {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 16px 24px 20px 34px;
+	border-top: 1px solid var(--smi-line-2);
+}
+
+/* Buttons */
+#smartinquiry .smi-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	height: 48px;
+	padding: 0 22px;
+	border: 1px solid transparent;
+	border-radius: 999px;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1;
+	white-space: nowrap;
+	transition: background-color 0.15s, border-color 0.15s, transform 0.1s, opacity 0.15s;
+}
+#smartinquiry .smi-btn:active { transform: translateY(1px); }
+#smartinquiry .smi-btn svg { width: 18px; height: 18px; }
+#smartinquiry .smi-btn--primary, #smartinquiry .smi-btn--primary:hover, #smartinquiry .smi-btn--primary:focus { background: var(--smi-accent); border-color: var(--smi-accent); color: var(--smi-accent-text); }
+#smartinquiry .smi-btn--primary:hover { filter: brightness(0.96); }
+#smartinquiry .smi-btn--primary:disabled { opacity: 0.6; cursor: progress; }
+#smartinquiry .smi-btn--ghost, #smartinquiry .smi-btn--ghost:hover, #smartinquiry .smi-btn--ghost:focus { background: var(--smi-paper); border-color: var(--smi-line); color: var(--smi-text); }
+#smartinquiry .smi-btn--ghost:hover { border-color: #cfcfc6; }
+#smartinquiry .smi-btn--danger, #smartinquiry .smi-btn--danger:hover, #smartinquiry .smi-btn--danger:focus { background: var(--smi-danger); border-color: var(--smi-danger); color: #fff; }
+#smartinquiry .smi-btn--sm { height: 40px; padding: 0 16px; font-size: 14px; }
+
+/* Steps */
+#smartinquiry .smi-step { display: grid; gap: 22px; animation: smi-step 0.25s ease-out; }
+#smartinquiry .smi-head { display: grid; gap: 6px; }
+#smartinquiry .smi-head h2 { font-size: 27px; line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; color: var(--smi-text); outline: none; text-wrap: balance; }
+#smartinquiry .smi-head p { color: var(--smi-muted); max-width: 56ch; }
+#smartinquiry .smi-info {
+	display: flex;
+	gap: 10px;
+	align-items: flex-start;
+	padding: 12px 14px;
+	border-radius: 14px;
+	background: var(--smi-field);
+	border: 1px solid var(--smi-line-2);
+	color: var(--smi-muted);
+	font-size: 13.5px;
+	white-space: pre-line;
+}
+#smartinquiry .smi-info svg { width: 17px; height: 17px; margin-top: 1px; color: var(--smi-accent-deep); }
+
+/* Service cards */
+#smartinquiry .smi-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+#smartinquiry .smi-card {
+	position: relative;
+	display: grid;
+	gap: 12px;
+	align-content: start;
+	min-height: 138px;
+	padding: 18px;
+	border: 1.5px solid var(--smi-line);
+	border-radius: 20px;
+	background: var(--smi-paper);
+	color: var(--smi-text);
+	text-align: left;
+	transition: border-color 0.15s, box-shadow 0.15s, transform 0.12s;
+}
+#smartinquiry .smi-card:hover { border-color: #c9c9c0; background: var(--smi-paper); color: var(--smi-text); transform: translateY(-1px); }
+#smartinquiry .smi-card__icon { width: 42px; height: 42px; border-radius: 13px; display: grid; place-items: center; background: var(--smi-line-2); color: var(--smi-text); transition: background-color 0.15s, color 0.15s; }
+#smartinquiry .smi-card__icon svg { width: 21px; height: 21px; }
+#smartinquiry .smi-card strong { display: block; font-size: 15.5px; font-weight: 700; line-height: 1.25; }
+#smartinquiry .smi-card small { display: block; margin-top: 3px; color: var(--smi-muted); font-size: 13px; line-height: 1.4; }
+#smartinquiry .smi-card__tick {
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	display: grid;
+	place-items: center;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: var(--smi-accent);
+	color: var(--smi-accent-text);
+	opacity: 0;
+	transform: scale(0.6);
+	transition: opacity 0.15s, transform 0.15s;
+}
+#smartinquiry .smi-card__tick svg { width: 14px; height: 14px; }
+#smartinquiry .smi-card[aria-checked="true"] { border-color: var(--smi-accent); box-shadow: 0 0 0 1px var(--smi-accent); }
+#smartinquiry .smi-card[aria-checked="true"] .smi-card__icon { background: var(--smi-accent-soft); color: var(--smi-accent-deep); }
+#smartinquiry .smi-card[aria-checked="true"] .smi-card__tick { opacity: 1; transform: none; }
+
+/* Questions */
+#smartinquiry .smi-qs { display: grid; gap: 24px; }
+#smartinquiry .smi-q { display: grid; gap: 10px; min-width: 0; }
+#smartinquiry .smi-q__label { display: block; font-size: 15px; font-weight: 700; color: var(--smi-text); }
+#smartinquiry .smi-q__label small { font-size: inherit; font-weight: 500; color: var(--smi-muted); margin-left: 6px; }
+#smartinquiry .smi-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+#smartinquiry .smi-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	min-height: 40px;
+	padding: 8px 15px;
+	border: 1.5px solid var(--smi-line);
+	border-radius: 999px;
+	background: var(--smi-paper);
+	color: var(--smi-text);
+	font-size: 14px;
+	font-weight: 600;
+	text-align: left;
+	transition: border-color 0.15s, background-color 0.15s;
+}
+#smartinquiry .smi-chip:hover { border-color: #c9c9c0; background: var(--smi-paper); color: var(--smi-text); }
+#smartinquiry .smi-chip svg { width: 15px; height: 15px; display: none; }
+#smartinquiry .smi-chip[aria-checked="true"] { border-color: var(--smi-accent); background: var(--smi-accent-soft); }
+#smartinquiry .smi-chip[aria-checked="true"] svg { display: block; color: var(--smi-accent-deep); }
+#smartinquiry .smi-field,
+#smartinquiry input.smi-field,
+#smartinquiry textarea.smi-field {
+	display: block;
+	width: 100%;
+	max-width: none;
+	height: auto;
+	min-height: 48px;
+	margin: 0;
+	padding: 12px 15px;
+	border: 1.5px solid var(--smi-line);
+	border-radius: 14px;
+	background: var(--smi-field);
+	color: var(--smi-text);
+	font: inherit;
+	font-size: 16px; /* 16px keeps iPhones from zooming in */
+	line-height: 1.4;
+	box-shadow: none;
+	transition: border-color 0.15s, background-color 0.15s, box-shadow 0.15s;
+}
+#smartinquiry textarea.smi-field { min-height: 110px; resize: vertical; }
+#smartinquiry .smi-field:focus { outline: none; border-color: var(--smi-accent); box-shadow: 0 0 0 3px var(--smi-accent-soft); background: var(--smi-paper); }
+#smartinquiry .smi-field::placeholder { color: #a3a39b; opacity: 1; }
+#smartinquiry .smi-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 14px; }
+#smartinquiry .smi-consent { display: flex; gap: 11px; align-items: flex-start; margin: 0; font-size: 14px; font-weight: 400; color: var(--smi-muted); cursor: pointer; }
+#smartinquiry .smi-consent input { width: 20px; height: 20px; margin: 1px 0 0; flex: none; accent-color: var(--smi-accent-deep); }
+#smartinquiry .smi-consent a { color: var(--smi-text); font-weight: 600; text-decoration: underline; }
+#smartinquiry .smi-err { display: none; color: var(--smi-danger); font-size: 13px; font-weight: 600; }
+#smartinquiry .smi-q--err .smi-err { display: block; }
+#smartinquiry .smi-q--err .smi-field { border-color: var(--smi-danger); }
+#smartinquiry .smi-q--err .smi-chip:not([aria-checked="true"]) { border-color: #e7b9b9; }
+#smartinquiry .smi-alert { padding: 12px 14px; border-radius: 14px; background: #fdf1f1; border: 1px solid #f0caca; color: var(--smi-danger); font-size: 14px; font-weight: 600; }
+/* Honeypot: off-screen, not display:none (some bots skip hidden fields) */
+#smartinquiry .smi-ts { margin-top: 18px; }
+#smartinquiry .smi-ts #smi-ts-box { min-height: 65px; }
+#smartinquiry .smi-ts__err { margin: 8px 0 0; color: var(--smi-danger); font-size: 13px; font-weight: 600; }
+#smartinquiry .smi-hp { position: absolute !important; left: -10000px !important; width: 1px; height: 1px; overflow: hidden; }
+
+/* Thank-you */
+#smartinquiry .smi-done { display: grid; gap: 18px; justify-items: start; padding-top: 18px; animation: smi-step 0.3s ease-out; }
+#smartinquiry .smi-done__icon { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--smi-accent); color: var(--smi-accent-text); }
+#smartinquiry .smi-done__icon svg { width: 30px; height: 30px; }
+#smartinquiry .smi-done h2 { font-size: 30px; letter-spacing: -0.03em; font-weight: 800; color: var(--smi-text); outline: none; }
+#smartinquiry .smi-done p { color: var(--smi-muted); max-width: 52ch; }
+#smartinquiry .smi-done p strong { color: var(--smi-text); }
+#smartinquiry .smi-done__ref { font-size: 13px; font-weight: 700; color: var(--smi-muted); font-variant-numeric: tabular-nums; }
+#smartinquiry .smi-done__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+#smartinquiry .smi-link { padding: 0; border: 0; background: none; color: var(--smi-muted); font-size: 13.5px; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+#smartinquiry .smi-link:hover { background: none; color: var(--smi-text); }
+
+/* Phones: full-height sheet, side panel hidden (progress bar and counter stay) */
+@media (max-width: 780px) {
+	#smartinquiry { padding: calc(12px + env(safe-area-inset-top, 0px)) 0 0; place-items: stretch; }
+	#smartinquiry .smi-modal { grid-template-columns: minmax(0, 1fr); max-height: none; border-radius: 24px 24px 0 0; }
+	#smartinquiry .smi-side { display: none; }
+	#smartinquiry .smi-top { padding: 16px 16px 0 20px; }
+	#smartinquiry .smi-bar { margin: 12px 20px 0; }
+	#smartinquiry .smi-body { padding: 22px 20px 24px; }
+	#smartinquiry .smi-foot { padding: 14px 16px calc(16px + env(safe-area-inset-bottom, 0px)) 20px; }
+	#smartinquiry .smi-cards { grid-template-columns: 1fr 1fr; }
+	#smartinquiry .smi-card { min-height: 0; padding: 15px; }
+	#smartinquiry .smi-head h2 { font-size: 23px; }
+	#smartinquiry .smi-grid2 { grid-template-columns: 1fr; }
+}
+@media (max-width: 420px) {
+	#smartinquiry .smi-btn { padding: 0 18px; }
+	#smartinquiry .smi-clear { padding: 0 11px; }
+	#smartinquiry .smi-clear span { display: none; }
+	#smartinquiry .smi-cards { gap: 10px; }
+}
+
+/* Themes with a custom cursor (Ohio can draw its own and hide the real one) would leave the form without any cursor,
+   because their cursor sits under this overlay. The normal cursor is used inside the form. */
+#smartinquiry, #smartinquiry * { cursor: default !important; }
+#smartinquiry button, #smartinquiry a, #smartinquiry label, #smartinquiry input[type="checkbox"] { cursor: pointer !important; }
+#smartinquiry input.smi-field, #smartinquiry textarea.smi-field { cursor: text !important; }
+#smartinquiry .smi-clear:disabled, #smartinquiry .smi-btn--primary:disabled { cursor: default !important; }
+
+/* ---------- Floating button (bottom corner) ----------
+   Hidden until front.js adds .is-shown. Colours come from its own settings. The theme's button styles (Ohio
+   turns buttons white on hover) are overridden, so it looks the same in every state. */
+#smartinquiry-float {
+	--smi-float-bg: #f7f7f8;
+	--smi-float-text: #000;
+	position: fixed;
+	bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+	left: calc(24px + env(safe-area-inset-left, 0px));
+	z-index: 90;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	min-width: 0;
+	height: 40px;
+	min-height: 0;
+	margin: 0;
+	padding: 0 12px;
+	border: 0 !important;
+	border-radius: 10px !important;
+	background: var(--smi-float-bg) !important;
+	color: var(--smi-float-text) !important;
+	font-family: inherit;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	text-decoration: none;
+	text-shadow: none;
+	white-space: nowrap;
+	box-shadow: 0 12px 30px -8px rgba(4, 39, 39, 0.28), 0 2px 6px rgba(4, 39, 39, 0.1);
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transform: translateY(18px) scale(0.96);
+	transition: opacity 0.25s ease, transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.2s ease, visibility 0s linear 0.35s;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
+}
+#smartinquiry-float.smi-float--right { left: auto; right: calc(24px + env(safe-area-inset-right, 0px)); }
+#smartinquiry-float.is-shown { opacity: 1; visibility: visible; pointer-events: auto; transform: none; transition-delay: 0s; }
+#smartinquiry-float.is-shown:hover { transform: translateY(-2px); box-shadow: 0 16px 34px -8px rgba(4, 39, 39, 0.34), 0 3px 8px rgba(4, 39, 39, 0.12); }
+#smartinquiry-float:hover, #smartinquiry-float:focus, #smartinquiry-float:active { background: var(--smi-float-bg) !important; color: var(--smi-float-text) !important; }
+#smartinquiry-float:focus { outline: none; }
+#smartinquiry-float:focus-visible { outline: 3px solid var(--smi-float-text); outline-offset: 3px; }
+@media (max-width: 780px) {
+	#smartinquiry-float { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); left: calc(16px + env(safe-area-inset-left, 0px)); font-size: 14px; }
+	#smartinquiry-float.smi-float--right { left: auto; right: calc(16px + env(safe-area-inset-right, 0px)); }
+	#smartinquiry-float.smi-float--m-hide { display: none !important; }
+}
+/* Out of the way while the Ohio mobile menu is open, and on paper. */
+body:has(.menu-slide-in-overlay.visible) #smartinquiry-float, html:has(.menu-slide-in-overlay.visible) #smartinquiry-float { display: none !important; }
+@media print { #smartinquiry-float { display: none !important; } }
+@media (prefers-reduced-motion: reduce) {
+	#smartinquiry-float { transform: none !important; transition: opacity 0.2s linear, visibility 0s linear 0.2s; }
+	#smartinquiry-float.is-shown { transition-delay: 0s; }
+}

@@ -1,0 +1,1722 @@
+# Copyright (C) 2026 Smartup
+# This file is distributed under the same license as the SmartInquiry plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: SmartInquiry 1.3.0\n"
+"Report-Msgid-Bugs-To: https://smartupweb.com\n"
+"Last-Translator: Smartup\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-09T20:00:24+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: smartinquiry\n"
+
+#. Plugin Name of the plugin
+#: smartinquiry.php
+msgid "SmartInquiry"
+msgstr ""
+
+#. Description of the plugin
+#: smartinquiry.php
+msgid "Step-by-step quote request form in a popup. Visitors pick a service, answer a few questions and download their request as a PDF; you get every request in the admin and by email. WPML ready."
+msgstr ""
+
+#. Author of the plugin
+#: smartinquiry.php
+msgid "Smartup"
+msgstr ""
+
+#. Author URI of the plugin
+#: smartinquiry.php
+msgid "https://smartupweb.com"
+msgstr ""
+
+#: includes/access.php:29
+msgid "SmartInquiry – Requests"
+msgstr ""
+
+#: includes/access.php:30
+msgid "SmartInquiry – Requests & settings"
+msgstr ""
+
+#: includes/admin-i18n.php:11
+msgid "Screen language"
+msgstr ""
+
+#: includes/admin-i18n.php:12
+msgid "By service"
+msgstr ""
+
+#: includes/admin-i18n.php:13
+msgid "All"
+msgstr ""
+
+#: includes/admin-i18n.php:14
+msgid "Administrator"
+msgstr ""
+
+#: includes/admin-i18n.php:15
+#: includes/admin.php:56
+msgid "Requests"
+msgstr ""
+
+#: includes/admin-i18n.php:16
+msgid "Form"
+msgstr ""
+
+#: includes/admin-i18n.php:17
+msgid "Texts"
+msgstr ""
+
+#: includes/admin-i18n.php:18
+#: includes/admin-i18n.php:66
+msgid "Notifications"
+msgstr ""
+
+#: includes/admin-i18n.php:19
+msgid "PDF"
+msgstr ""
+
+#: includes/admin-i18n.php:20
+msgid "Appearance & links"
+msgstr ""
+
+#: includes/admin-i18n.php:21
+msgid "Privacy"
+msgstr ""
+
+#: includes/admin-i18n.php:22
+msgid "Access"
+msgstr ""
+
+#: includes/admin-i18n.php:23
+msgid "Change password"
+msgstr ""
+
+#: includes/admin-i18n.php:24
+msgid "Log out"
+msgstr ""
+
+#: includes/admin-i18n.php:26
+msgid "Let people work on the requests without the rest of WordPress."
+msgstr ""
+
+#: includes/admin-i18n.php:27
+msgid "Entry link"
+msgstr ""
+
+#: includes/admin-i18n.php:28
+msgid "Send it to the people below. It asks them to sign in and opens the requests straight away."
+msgstr ""
+
+#: includes/admin-i18n.php:29
+msgid "Sign in and go to the requests"
+msgstr ""
+
+#: includes/admin-i18n.php:30
+msgid "No entry link. People can still sign in at the usual WordPress login."
+msgstr ""
+
+#: includes/admin-i18n.php:31
+msgid "A page already uses this address"
+msgstr ""
+
+#: includes/admin-i18n.php:32
+msgid "The link would hide it. Choose another word."
+msgstr ""
+
+#: includes/admin-i18n.php:33
+msgid "Roles"
+msgstr ""
+
+#: includes/admin-i18n.php:34
+msgid "Given per person in Users. Neither role sees anything else of WordPress."
+msgstr ""
+
+#: includes/admin-i18n.php:35
+msgid "Requests: read, status, notes, PDF and CSV, delete."
+msgstr ""
+
+#: includes/admin-i18n.php:36
+msgid "Everything above, plus every settings screen of SmartInquiry (not this one)."
+msgstr ""
+
+#: includes/admin-i18n.php:37
+msgid "People with access"
+msgstr ""
+
+#: includes/admin-i18n.php:38
+msgid "Change a role or remove access from the person’s page in Users. Administrators always have full access."
+msgstr ""
+
+#: includes/admin-i18n.php:39
+msgid "Nobody yet. Add a user and choose one of the two SmartInquiry roles."
+msgstr ""
+
+#: includes/admin-i18n.php:40
+msgid "Add a person"
+msgstr ""
+
+#: includes/admin-i18n.php:41
+msgid "Edit"
+msgstr ""
+
+#: includes/admin-i18n.php:42
+msgid "Save"
+msgstr ""
+
+#: includes/admin-i18n.php:43
+msgid "Settings saved."
+msgstr ""
+
+#. translators: %s: names of caching plugins
+#: includes/admin-i18n.php:45
+#, php-format
+msgid "Settings saved. Page cache cleared: %s."
+msgstr ""
+
+#: includes/admin-i18n.php:46
+msgid "Unsaved changes"
+msgstr ""
+
+#: includes/admin-i18n.php:47
+msgid "All changes saved"
+msgstr ""
+
+#: includes/admin-i18n.php:48
+msgid "Save your changes first."
+msgstr ""
+
+#: includes/admin-i18n.php:49
+msgid "You have unsaved changes. Switch the screen language anyway?"
+msgstr ""
+
+#: includes/admin-i18n.php:50
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: includes/admin-i18n.php:51
+msgid "Loading…"
+msgstr ""
+
+#: includes/admin-i18n.php:52
+#: includes/admin-i18n.php:270
+msgid "Close"
+msgstr ""
+
+#: includes/admin-i18n.php:53
+msgid "Copy"
+msgstr ""
+
+#. translators: %s: copied text
+#: includes/admin-i18n.php:55
+#, php-format
+msgid "Copied: %s"
+msgstr ""
+
+#: includes/admin-i18n.php:56
+msgid "Delete"
+msgstr ""
+
+#: includes/admin-i18n.php:57
+msgid "Sure? Delete"
+msgstr ""
+
+#: includes/admin-i18n.php:58
+msgid "Back to the Smartup logo"
+msgstr ""
+
+#: includes/admin-i18n.php:59
+msgid "(no title)"
+msgstr ""
+
+#: includes/admin-i18n.php:60
+msgid "hidden"
+msgstr ""
+
+#: includes/admin-i18n.php:63
+msgid "Every request sent from the form on your site, newest first."
+msgstr ""
+
+#: includes/admin-i18n.php:64
+msgid "Export CSV"
+msgstr ""
+
+#: includes/admin-i18n.php:67
+msgid "Desktop notifications"
+msgstr ""
+
+#: includes/admin-i18n.php:68
+msgid "A notification on this computer for every new request, while SmartInquiry is open in a tab (it can be in the background)."
+msgstr ""
+
+#: includes/admin-i18n.php:69
+msgid "Sound"
+msgstr ""
+
+#: includes/admin-i18n.php:70
+msgid "A short chime with each new request."
+msgstr ""
+
+#: includes/admin-i18n.php:71
+msgid "This browser cannot show notifications."
+msgstr ""
+
+#: includes/admin-i18n.php:72
+msgid "Notifications need the site to open with https://."
+msgstr ""
+
+#: includes/admin-i18n.php:73
+msgid "The browser blocks notifications for this site. Allow them from the icon next to the address bar, then switch them on again."
+msgstr ""
+
+#: includes/admin-i18n.php:74
+msgid "Switch on again and choose “Allow” when the browser asks."
+msgstr ""
+
+#: includes/admin-i18n.php:75
+msgid "Send a test notification"
+msgstr ""
+
+#: includes/admin-i18n.php:76
+msgid "Test notification"
+msgstr ""
+
+#. translators: %s: request number, e.g. SU-2026-0148
+#: includes/admin-i18n.php:78
+#, php-format
+msgid "New request %s"
+msgstr ""
+
+#: includes/admin-i18n.php:79
+msgid "Desktop notifications are on in this browser."
+msgstr ""
+
+#: includes/admin-i18n.php:80
+msgid "Notification sound"
+msgstr ""
+
+#: includes/admin-i18n.php:81
+msgid "Confirmation"
+msgstr ""
+
+#: includes/admin-i18n.php:82
+msgid "Ding-dong"
+msgstr ""
+
+#: includes/admin-i18n.php:83
+msgid "Listen"
+msgstr ""
+
+#: includes/admin-i18n.php:84
+msgid "You hear the sound but see no notification? Allow notifications for your browser in the computer’s settings (Windows: Settings → System → Notifications; Mac: System Settings → Notifications)."
+msgstr ""
+
+#: includes/admin-i18n.php:85
+msgid "Export"
+msgstr ""
+
+#: includes/admin-i18n.php:86
+msgid "New, not answered yet"
+msgstr ""
+
+#: includes/admin-i18n.php:87
+msgid "Last 7 days"
+msgstr ""
+
+#: includes/admin-i18n.php:88
+msgid "This month"
+msgstr ""
+
+#: includes/admin-i18n.php:89
+msgid "Won projects"
+msgstr ""
+
+#: includes/admin-i18n.php:90
+msgid "All requests"
+msgstr ""
+
+#: includes/admin-i18n.php:91
+#: includes/admin.php:469
+msgid "Status"
+msgstr ""
+
+#: includes/admin-i18n.php:92
+#: includes/admin.php:468
+msgid "New"
+msgstr ""
+
+#: includes/admin-i18n.php:93
+#: includes/admin.php:468
+msgid "In contact"
+msgstr ""
+
+#: includes/admin-i18n.php:94
+#: includes/admin.php:468
+msgid "Offer sent"
+msgstr ""
+
+#: includes/admin-i18n.php:95
+#: includes/admin.php:468
+msgid "Won"
+msgstr ""
+
+#: includes/admin-i18n.php:96
+#: includes/admin.php:468
+msgid "Lost"
+msgstr ""
+
+#: includes/admin-i18n.php:97
+msgid "Search"
+msgstr ""
+
+#: includes/admin-i18n.php:98
+msgid "Search name, email, phone, number"
+msgstr ""
+
+#: includes/admin-i18n.php:99
+msgid "Filters"
+msgstr ""
+
+#: includes/admin-i18n.php:100
+#: includes/submit.php:434
+msgid "Service"
+msgstr ""
+
+#: includes/admin-i18n.php:101
+#: includes/admin.php:469
+#: includes/submit.php:505
+msgid "Form language"
+msgstr ""
+
+#: includes/admin-i18n.php:102
+msgid "Remove filter"
+msgstr ""
+
+#. translators: %d: number of requests
+#: includes/admin-i18n.php:104
+#, php-format
+msgid "%d selected"
+msgstr ""
+
+#: includes/admin-i18n.php:105
+msgid "Change status"
+msgstr ""
+
+#: includes/admin-i18n.php:106
+msgid "Select all"
+msgstr ""
+
+#. translators: %s: customer name
+#: includes/admin-i18n.php:108
+#, php-format
+msgid "Select %s"
+msgstr ""
+
+#. translators: %s: customer name
+#: includes/admin-i18n.php:110
+#, php-format
+msgid "Open %s"
+msgstr ""
+
+#: includes/admin-i18n.php:111
+msgid "Customer"
+msgstr ""
+
+#: includes/admin-i18n.php:112
+msgid "Service & budget"
+msgstr ""
+
+#: includes/admin-i18n.php:113
+#: includes/admin.php:469
+#: includes/store.php:225
+msgid "Date"
+msgstr ""
+
+#: includes/admin-i18n.php:114
+msgid "Actions"
+msgstr ""
+
+#: includes/admin-i18n.php:115
+msgid "Not opened yet"
+msgstr ""
+
+#: includes/admin-i18n.php:116
+msgid "No requests yet"
+msgstr ""
+
+#: includes/admin-i18n.php:117
+msgid "When someone sends the form on your site, the request appears here."
+msgstr ""
+
+#: includes/admin-i18n.php:118
+msgid "No requests here"
+msgstr ""
+
+#: includes/admin-i18n.php:119
+msgid "Try another search or remove a filter."
+msgstr ""
+
+#. translators: 1: current page, 2: number of pages
+#: includes/admin-i18n.php:121
+#, php-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#. translators: %d: number of requests
+#: includes/admin-i18n.php:123
+#, php-format
+msgid "%d requests"
+msgstr ""
+
+#: includes/admin-i18n.php:124
+msgid "1 request"
+msgstr ""
+
+#: includes/admin-i18n.php:125
+msgid "First page"
+msgstr ""
+
+#: includes/admin-i18n.php:126
+msgid "Previous page"
+msgstr ""
+
+#: includes/admin-i18n.php:127
+msgid "Next page"
+msgstr ""
+
+#: includes/admin-i18n.php:128
+msgid "Last page"
+msgstr ""
+
+#. translators: %s: time
+#: includes/admin-i18n.php:130
+#, php-format
+msgid "Today, %s"
+msgstr ""
+
+#. translators: %s: time
+#: includes/admin-i18n.php:132
+#, php-format
+msgid "Yesterday, %s"
+msgstr ""
+
+#. translators: %d: number of requests
+#: includes/admin-i18n.php:134
+#, php-format
+msgid "%d requests deleted."
+msgstr ""
+
+#: includes/admin-i18n.php:135
+msgid "1 request deleted."
+msgstr ""
+
+#. translators: 1: number of requests, 2: status
+#: includes/admin-i18n.php:137
+#, php-format
+msgid "%1$d requests changed to \"%2$s\"."
+msgstr ""
+
+#. translators: 1: always 1, 2: status
+#: includes/admin-i18n.php:139
+#, php-format
+msgid "%1$d request changed to \"%2$s\"."
+msgstr ""
+
+#. translators: %s: status
+#: includes/admin-i18n.php:141
+#, php-format
+msgid "Status: %s"
+msgstr ""
+
+#. translators: %s: request number
+#: includes/admin-i18n.php:143
+#, php-format
+msgid "Request %s deleted."
+msgstr ""
+
+#. translators: %s: language name
+#: includes/admin-i18n.php:145
+#, php-format
+msgid "Form in %s"
+msgstr ""
+
+#: includes/admin-i18n.php:146
+#: includes/admin-i18n.php:346
+#: includes/admin.php:469
+#: includes/store.php:227
+#: includes/submit.php:494
+#: includes/submit.php:501
+msgid "Email"
+msgstr ""
+
+#: includes/admin-i18n.php:147
+#: includes/admin-i18n.php:345
+#: includes/admin.php:469
+#: includes/store.php:228
+#: includes/submit.php:494
+#: includes/submit.php:501
+msgid "Phone"
+msgstr ""
+
+#: includes/admin-i18n.php:148
+#: includes/submit.php:505
+msgid "Prefers to be contacted by"
+msgstr ""
+
+#: includes/admin-i18n.php:149
+#: includes/admin.php:469
+#: includes/store.php:235
+msgid "Internal notes"
+msgstr ""
+
+#: includes/admin-i18n.php:150
+msgid "e.g. We spoke on the phone, sending the offer on Tuesday."
+msgstr ""
+
+#: includes/admin-i18n.php:151
+msgid "Only your team sees these. They are not in the customer’s PDF. Saved when you click outside the box."
+msgstr ""
+
+#: includes/admin-i18n.php:152
+msgid "Note saved."
+msgstr ""
+
+#: includes/admin-i18n.php:153
+msgid "Download PDF"
+msgstr ""
+
+#: includes/admin-i18n.php:156
+msgid "Services, steps and questions. Drag to reorder. Changes reach the form on your site when you save."
+msgstr ""
+
+#: includes/admin-i18n.php:157
+msgid "Language of the texts"
+msgstr ""
+
+#: includes/admin-i18n.php:158
+msgid "Drag to reorder"
+msgstr ""
+
+#. translators: %d: number of questions
+#: includes/admin-i18n.php:160
+#, php-format
+msgid "%d questions"
+msgstr ""
+
+#: includes/admin-i18n.php:161
+msgid "1 question"
+msgstr ""
+
+#: includes/admin-i18n.php:162
+msgid "Shared questions"
+msgstr ""
+
+#: includes/admin-i18n.php:163
+msgid "Asked for every service"
+msgstr ""
+
+#: includes/admin-i18n.php:164
+msgid "New service"
+msgstr ""
+
+#: includes/admin-i18n.php:165
+msgid "The new service stays hidden until you switch it on."
+msgstr ""
+
+#: includes/admin-i18n.php:166
+msgid "Shown in the form"
+msgstr ""
+
+#: includes/admin-i18n.php:167
+msgid "Service name"
+msgstr ""
+
+#: includes/admin-i18n.php:168
+msgid "Short description"
+msgstr ""
+
+#: includes/admin-i18n.php:169
+msgid "Icon"
+msgstr ""
+
+#: includes/admin-i18n.php:170
+msgid "Step 2 · Details"
+msgstr ""
+
+#: includes/admin-i18n.php:171
+msgid "Step 3 · Features"
+msgstr ""
+
+#: includes/admin-i18n.php:172
+msgid "No questions: the form skips this step"
+msgstr ""
+
+#: includes/admin-i18n.php:173
+msgid "Step title"
+msgstr ""
+
+#: includes/admin-i18n.php:174
+msgid "Text under the title"
+msgstr ""
+
+#: includes/admin-i18n.php:175
+msgid "New question"
+msgstr ""
+
+#: includes/admin-i18n.php:176
+msgid "Required"
+msgstr ""
+
+#: includes/admin-i18n.php:177
+msgid "Conditional"
+msgstr ""
+
+#: includes/admin-i18n.php:178
+msgid "Question"
+msgstr ""
+
+#: includes/admin-i18n.php:179
+msgid "Small grey note"
+msgstr ""
+
+#: includes/admin-i18n.php:180
+msgid "e.g. optional"
+msgstr ""
+
+#: includes/admin-i18n.php:181
+msgid "Type of answer"
+msgstr ""
+
+#: includes/admin-i18n.php:182
+msgid "One choice"
+msgstr ""
+
+#: includes/admin-i18n.php:183
+msgid "Several choices"
+msgstr ""
+
+#: includes/admin-i18n.php:184
+msgid "Short text"
+msgstr ""
+
+#: includes/admin-i18n.php:185
+msgid "Long text"
+msgstr ""
+
+#: includes/admin-i18n.php:186
+msgid "\"Other\" choice with a text box"
+msgstr ""
+
+#: includes/admin-i18n.php:187
+msgid "Example text in the empty box"
+msgstr ""
+
+#: includes/admin-i18n.php:188
+msgid "e.g. www.example.com"
+msgstr ""
+
+#: includes/admin-i18n.php:189
+msgid "Only show if"
+msgstr ""
+
+#: includes/admin-i18n.php:190
+msgid "Answer"
+msgstr ""
+
+#: includes/admin-i18n.php:191
+msgid "Always shown"
+msgstr ""
+
+#: includes/admin-i18n.php:192
+msgid "Choices"
+msgstr ""
+
+#. translators: %d: number
+#: includes/admin-i18n.php:194
+#, php-format
+msgid "Choice %d"
+msgstr ""
+
+#: includes/admin-i18n.php:195
+msgid "Add choice"
+msgstr ""
+
+#: includes/admin-i18n.php:196
+msgid "Remove choice"
+msgstr ""
+
+#: includes/admin-i18n.php:197
+msgid "Up"
+msgstr ""
+
+#: includes/admin-i18n.php:198
+msgid "Down"
+msgstr ""
+
+#: includes/admin-i18n.php:199
+msgid "Delete question"
+msgstr ""
+
+#: includes/admin-i18n.php:200
+msgid "Delete service"
+msgstr ""
+
+#: includes/admin-i18n.php:201
+msgid "Budget"
+msgstr ""
+
+#: includes/admin-i18n.php:202
+#: includes/admin-i18n.php:204
+msgid "Step 4 · required, one choice"
+msgstr ""
+
+#: includes/admin-i18n.php:203
+msgid "When would you like to start?"
+msgstr ""
+
+#: includes/admin-i18n.php:205
+msgid "The question texts of steps 4 and 5 (budget, notes, name, email, phone…) are in Texts."
+msgstr ""
+
+#: includes/admin-i18n.php:208
+msgid "Everything else the visitor reads, in every language of the site. Leave a box empty to hide that text where possible."
+msgstr ""
+
+#: includes/admin-i18n.php:209
+msgid "Reset to default"
+msgstr ""
+
+#: includes/admin-i18n.php:210
+msgid "Information boxes"
+msgstr ""
+
+#: includes/admin-i18n.php:211
+msgid "Titles and steps"
+msgstr ""
+
+#: includes/admin-i18n.php:212
+msgid "Questions of steps 4 and 5"
+msgstr ""
+
+#: includes/admin-i18n.php:213
+msgid "Buttons"
+msgstr ""
+
+#: includes/admin-i18n.php:214
+msgid "Error messages"
+msgstr ""
+
+#: includes/admin-i18n.php:215
+msgid "Thank you and PDF"
+msgstr ""
+
+#: includes/admin-i18n.php:216
+msgid "Step 1 · information"
+msgstr ""
+
+#: includes/admin-i18n.php:217
+msgid "Step 3 · information"
+msgstr ""
+
+#: includes/admin-i18n.php:218
+msgid "Step 4 · information"
+msgstr ""
+
+#: includes/admin-i18n.php:219
+msgid "Step 5 · information"
+msgstr ""
+
+#: includes/admin-i18n.php:220
+msgid "Reply time"
+msgstr ""
+
+#: includes/admin-i18n.php:221
+msgid "Side panel and PDF footer."
+msgstr ""
+
+#: includes/admin-i18n.php:222
+msgid "Form title"
+msgstr ""
+
+#: includes/admin-i18n.php:223
+msgid "Under the form title"
+msgstr ""
+
+#: includes/admin-i18n.php:224
+msgid "Step 1 · title"
+msgstr ""
+
+#: includes/admin-i18n.php:225
+msgid "Step 1 · text"
+msgstr ""
+
+#: includes/admin-i18n.php:226
+msgid "Step 4 · title"
+msgstr ""
+
+#: includes/admin-i18n.php:227
+msgid "Step 4 · text"
+msgstr ""
+
+#: includes/admin-i18n.php:228
+msgid "Step 5 · title"
+msgstr ""
+
+#: includes/admin-i18n.php:229
+msgid "Step 5 · text"
+msgstr ""
+
+#: includes/admin-i18n.php:230
+msgid "Summary title"
+msgstr ""
+
+#: includes/admin-i18n.php:231
+msgid "Summary when empty"
+msgstr ""
+
+#: includes/admin-i18n.php:232
+msgid "Step counter"
+msgstr ""
+
+#: includes/admin-i18n.php:233
+msgid "{n} = current step, {t} = number of steps."
+msgstr ""
+
+#: includes/admin-i18n.php:234
+msgid "Step name · service"
+msgstr ""
+
+#: includes/admin-i18n.php:235
+msgid "Step name · details"
+msgstr ""
+
+#: includes/admin-i18n.php:236
+msgid "Step name · features"
+msgstr ""
+
+#: includes/admin-i18n.php:237
+msgid "Step name · timing & budget"
+msgstr ""
+
+#: includes/admin-i18n.php:238
+msgid "Step name · contact details"
+msgstr ""
+
+#: includes/admin-i18n.php:239
+msgid "Question · when"
+msgstr ""
+
+#: includes/admin-i18n.php:240
+msgid "Question · budget"
+msgstr ""
+
+#: includes/admin-i18n.php:241
+msgid "Note next to the budget"
+msgstr ""
+
+#: includes/admin-i18n.php:242
+msgid "Question · notes"
+msgstr ""
+
+#: includes/admin-i18n.php:243
+msgid "Example text · notes"
+msgstr ""
+
+#: includes/admin-i18n.php:244
+msgid "Word \"optional\""
+msgstr ""
+
+#: includes/admin-i18n.php:245
+msgid "Field · name"
+msgstr ""
+
+#: includes/admin-i18n.php:246
+msgid "Example · name"
+msgstr ""
+
+#: includes/admin-i18n.php:247
+msgid "Field · email"
+msgstr ""
+
+#: includes/admin-i18n.php:248
+msgid "Example · email"
+msgstr ""
+
+#: includes/admin-i18n.php:249
+msgid "Field · phone"
+msgstr ""
+
+#: includes/admin-i18n.php:250
+msgid "Example · phone"
+msgstr ""
+
+#: includes/admin-i18n.php:251
+msgid "Field · company"
+msgstr ""
+
+#: includes/admin-i18n.php:252
+msgid "Example · company"
+msgstr ""
+
+#: includes/admin-i18n.php:253
+msgid "Question · how to contact"
+msgstr ""
+
+#: includes/admin-i18n.php:254
+msgid "Choice · phone"
+msgstr ""
+
+#: includes/admin-i18n.php:255
+msgid "Choice · email"
+msgstr ""
+
+#: includes/admin-i18n.php:256
+msgid "Consent"
+msgstr ""
+
+#: includes/admin-i18n.php:257
+msgid "{link} becomes the link to the privacy page."
+msgstr ""
+
+#: includes/admin-i18n.php:258
+msgid "Privacy link text"
+msgstr ""
+
+#: includes/admin-i18n.php:259
+msgid "Choice \"Other\""
+msgstr ""
+
+#: includes/admin-i18n.php:260
+msgid "Example · \"Other\" box"
+msgstr ""
+
+#: includes/admin-i18n.php:261
+msgid "Back"
+msgstr ""
+
+#: includes/admin-i18n.php:262
+msgid "Continue"
+msgstr ""
+
+#: includes/admin-i18n.php:263
+msgid "Send"
+msgstr ""
+
+#: includes/admin-i18n.php:264
+msgid "While sending"
+msgstr ""
+
+#: includes/admin-i18n.php:265
+msgid "Clear"
+msgstr ""
+
+#: includes/admin-i18n.php:266
+msgid "Clear · question"
+msgstr ""
+
+#: includes/admin-i18n.php:267
+msgid "Clear · explanation"
+msgstr ""
+
+#: includes/admin-i18n.php:268
+msgid "Cancel"
+msgstr ""
+
+#: includes/admin-i18n.php:269
+msgid "Clear · confirm"
+msgstr ""
+
+#: includes/admin-i18n.php:271
+msgid "No choice made"
+msgstr ""
+
+#: includes/admin-i18n.php:272
+msgid "Nothing ticked"
+msgstr ""
+
+#: includes/admin-i18n.php:273
+msgid "Empty field"
+msgstr ""
+
+#: includes/admin-i18n.php:274
+msgid "Wrong email"
+msgstr ""
+
+#: includes/admin-i18n.php:275
+msgid "Short phone number"
+msgstr ""
+
+#: includes/admin-i18n.php:276
+msgid "No consent"
+msgstr ""
+
+#: includes/admin-i18n.php:277
+msgid "Could not send"
+msgstr ""
+
+#: includes/admin-i18n.php:278
+msgid "Too many requests"
+msgstr ""
+
+#: includes/admin-i18n.php:279
+msgid "Security check not completed"
+msgstr ""
+
+#: includes/admin-i18n.php:280
+msgid "Security check unavailable"
+msgstr ""
+
+#: includes/admin-i18n.php:281
+msgid "Form changed meanwhile"
+msgstr ""
+
+#: includes/admin-i18n.php:282
+msgid "Thank you"
+msgstr ""
+
+#: includes/admin-i18n.php:283
+msgid "Followed by the first name."
+msgstr ""
+
+#: includes/admin-i18n.php:284
+msgid "Word \"Request\" before the number"
+msgstr ""
+
+#: includes/admin-i18n.php:285
+msgid "Thank-you message"
+msgstr ""
+
+#: includes/admin-i18n.php:286
+msgid "{where} becomes the phone or the email."
+msgstr ""
+
+#: includes/admin-i18n.php:287
+msgid "Text about the PDF"
+msgstr ""
+
+#: includes/admin-i18n.php:288
+msgid "PDF button"
+msgstr ""
+
+#: includes/admin-i18n.php:289
+msgid "New request link"
+msgstr ""
+
+#: includes/admin-i18n.php:290
+msgid "PDF · title"
+msgstr ""
+
+#: includes/admin-i18n.php:291
+msgid "PDF · service section"
+msgstr ""
+
+#: includes/admin-i18n.php:292
+msgid "PDF · \"what you need\""
+msgstr ""
+
+#: includes/admin-i18n.php:293
+msgid "PDF · contact section"
+msgstr ""
+
+#: includes/admin-i18n.php:294
+msgid "PDF · \"contact by\""
+msgstr ""
+
+#: includes/admin-i18n.php:295
+msgid "PDF · file name"
+msgstr ""
+
+#: includes/admin-i18n.php:296
+msgid "Latin letters only; the number is added."
+msgstr ""
+
+#: includes/admin-i18n.php:299
+msgid "An email to your team for every new request. Customers get no email: they download the PDF."
+msgstr ""
+
+#: includes/admin-i18n.php:300
+msgid "Email for new requests"
+msgstr ""
+
+#: includes/admin-i18n.php:301
+msgid "Every request is always kept here, with or without an email."
+msgstr ""
+
+#: includes/admin-i18n.php:302
+msgid "Send an email for every new request"
+msgstr ""
+
+#: includes/admin-i18n.php:303
+msgid "With all the answers and a button that opens it here."
+msgstr ""
+
+#: includes/admin-i18n.php:304
+msgid "Recipients"
+msgstr ""
+
+#: includes/admin-i18n.php:305
+msgid "Type an email address and press Enter. You can add several."
+msgstr ""
+
+#: includes/admin-i18n.php:306
+msgid "e.g. info@example.com"
+msgstr ""
+
+#. translators: %s: email address
+#: includes/admin-i18n.php:308
+#, php-format
+msgid "No recipient yet: emails go to the site administrator (%s)."
+msgstr ""
+
+#. translators: %s: email address
+#: includes/admin-i18n.php:310
+#, php-format
+msgid "Remove %s"
+msgstr ""
+
+#: includes/admin-i18n.php:311
+msgid "This email does not look right."
+msgstr ""
+
+#: includes/admin-i18n.php:312
+msgid "Email subject"
+msgstr ""
+
+#: includes/admin-i18n.php:313
+msgid "{service}, {name} and {ref} are filled in automatically."
+msgstr ""
+
+#: includes/admin-i18n.php:314
+msgid "PDF attachment"
+msgstr ""
+
+#: includes/admin-i18n.php:315
+msgid "The same PDF the customer downloads, with your logo."
+msgstr ""
+
+#: includes/admin-i18n.php:316
+msgid "Attach the PDF to the email"
+msgstr ""
+
+#: includes/admin-i18n.php:317
+msgid "Made on the server, in the language the customer used."
+msgstr ""
+
+#: includes/admin-i18n.php:318
+msgid "This server cannot make PDFs (it needs the PHP GD extension with FreeType), so emails go without one."
+msgstr ""
+
+#: includes/admin-i18n.php:319
+msgid "Delivery"
+msgstr ""
+
+#: includes/admin-i18n.php:320
+msgid "So that emails do not end up in spam."
+msgstr ""
+
+#. translators: %s: plugin name
+#: includes/admin-i18n.php:322
+#, php-format
+msgid "Emails are sent through %s"
+msgstr ""
+
+#: includes/admin-i18n.php:323
+msgid "Emails are sent through a custom mail setup"
+msgstr ""
+
+#: includes/admin-i18n.php:324
+msgid "Send a test email to make sure it arrives."
+msgstr ""
+
+#: includes/admin-i18n.php:325
+msgid "No SMTP plugin found"
+msgstr ""
+
+#: includes/admin-i18n.php:326
+msgid "On its own, WordPress sends emails that often get lost. Install FluentSMTP or WP Mail SMTP and connect it to your email account. The domain also needs SPF, DKIM and DMARC records."
+msgstr ""
+
+#: includes/admin-i18n.php:327
+msgid "Send a test email"
+msgstr ""
+
+#. translators: %s: email addresses
+#: includes/admin-i18n.php:329
+#, php-format
+msgid "Test email sent to %s. Check the inbox (and spam)."
+msgstr ""
+
+#: includes/admin-i18n.php:330
+msgid "WordPress could not send the email. Check the SMTP settings."
+msgstr ""
+
+#: includes/admin-i18n.php:333
+msgid "What goes into the PDF that customers download."
+msgstr ""
+
+#: includes/admin-i18n.php:334
+msgid "Logo"
+msgstr ""
+
+#: includes/admin-i18n.php:335
+msgid "PNG or JPG from your Media Library, ideally wide with a transparent background."
+msgstr ""
+
+#: includes/admin-i18n.php:336
+msgid "The Smartup logo (default). Choose another one to replace it."
+msgstr ""
+
+#: includes/admin-i18n.php:337
+msgid "Choose logo"
+msgstr ""
+
+#: includes/admin-i18n.php:338
+msgid "Change logo"
+msgstr ""
+
+#: includes/admin-i18n.php:339
+msgid "Use this logo"
+msgstr ""
+
+#: includes/admin-i18n.php:340
+msgid "Company details"
+msgstr ""
+
+#: includes/admin-i18n.php:341
+msgid "Shown under the logo. Empty lines are left out."
+msgstr ""
+
+#: includes/admin-i18n.php:342
+msgid "Company name"
+msgstr ""
+
+#: includes/admin-i18n.php:343
+msgid "Website"
+msgstr ""
+
+#: includes/admin-i18n.php:344
+msgid "Address"
+msgstr ""
+
+#: includes/admin-i18n.php:347
+msgid "VAT number / tax office"
+msgstr ""
+
+#: includes/admin-i18n.php:348
+msgid "Footer"
+msgstr ""
+
+#: includes/admin-i18n.php:349
+msgid "Small line at the bottom of every page. Empty: the reply time."
+msgstr ""
+
+#: includes/admin-i18n.php:350
+msgid "Request number prefix"
+msgstr ""
+
+#: includes/admin-i18n.php:351
+msgid "Up to 6 letters or digits, e.g. SU gives SU-2026-0148. Applies to new requests."
+msgstr ""
+
+#: includes/admin-i18n.php:352
+msgid "Sample"
+msgstr ""
+
+#: includes/admin-i18n.php:353
+msgid "A PDF with example answers and your current (even unsaved) settings."
+msgstr ""
+
+#. translators: %s: language name
+#: includes/admin-i18n.php:355
+#, php-format
+msgid "Sample in %s"
+msgstr ""
+
+#: includes/admin-i18n.php:358
+msgid "Colours of the form, and how to open it from anywhere on your site. Fonts come from your theme."
+msgstr ""
+
+#: includes/admin-i18n.php:359
+msgid "Colours"
+msgstr ""
+
+#: includes/admin-i18n.php:360
+msgid "Buttons, selected answers, progress and the side panel."
+msgstr ""
+
+#: includes/admin-i18n.php:361
+msgid "Buttons and selections"
+msgstr ""
+
+#: includes/admin-i18n.php:362
+msgid "Text on buttons"
+msgstr ""
+
+#: includes/admin-i18n.php:363
+msgid "Side panel"
+msgstr ""
+
+#: includes/admin-i18n.php:364
+msgid "Opening the form"
+msgstr ""
+
+#: includes/admin-i18n.php:365
+msgid "Put the link on a button or menu item. The language follows the page (WPML)."
+msgstr ""
+
+#: includes/admin-i18n.php:366
+msgid "Link for a button or menu item"
+msgstr ""
+
+#: includes/admin-i18n.php:367
+msgid "CSS class for any element"
+msgstr ""
+
+#: includes/admin-i18n.php:368
+msgid "In a WordPress menu"
+msgstr ""
+
+#: includes/admin-i18n.php:369
+msgid "Works with the Ohio mobile menu and One Page Menu too."
+msgstr ""
+
+#: includes/admin-i18n.php:370
+msgid "Appearance → Menus: add a Custom Link with URL #smartup-inquiry. Or, with “CSS Classes” ticked in Screen Options, give any menu item one of these classes."
+msgstr ""
+
+#: includes/admin-i18n.php:371
+msgid "CSS class for the menu item"
+msgstr ""
+
+#: includes/admin-i18n.php:372
+msgid "…with a service (or a language: js-inquiry-en)"
+msgstr ""
+
+#: includes/admin-i18n.php:373
+msgid "With a service already chosen"
+msgstr ""
+
+#: includes/admin-i18n.php:374
+msgid "Opens straight at step 2 of that service."
+msgstr ""
+
+#: includes/admin-i18n.php:375
+msgid "No service is switched on."
+msgstr ""
+
+#: includes/admin-i18n.php:376
+msgid "In a specific language"
+msgstr ""
+
+#: includes/admin-i18n.php:377
+msgid "Only if you ever need to override the page language."
+msgstr ""
+
+#. translators: %s: language name
+#: includes/admin-i18n.php:379
+#, php-format
+msgid "Always in %s"
+msgstr ""
+
+#: includes/admin-i18n.php:380
+msgid "Service and language together"
+msgstr ""
+
+#: includes/admin-i18n.php:381
+msgid "Floating button"
+msgstr ""
+
+#: includes/admin-i18n.php:382
+msgid "A button in a bottom corner of every page that opens the form."
+msgstr ""
+
+#: includes/admin-i18n.php:383
+msgid "Show the floating button"
+msgstr ""
+
+#: includes/admin-i18n.php:384
+msgid "It appears once the visitor scrolls past the page’s own form buttons (e.g. the one in the hero) and steps aside while one of them is on screen, so the two are never seen together."
+msgstr ""
+
+#: includes/admin-i18n.php:385
+msgid "Position"
+msgstr ""
+
+#: includes/admin-i18n.php:386
+msgid "Keep it away from other floating items, e.g. SmartBanner is on the right by default."
+msgstr ""
+
+#: includes/admin-i18n.php:387
+msgid "Bottom left"
+msgstr ""
+
+#: includes/admin-i18n.php:388
+msgid "Bottom right"
+msgstr ""
+
+#: includes/admin-i18n.php:389
+msgid "Button text"
+msgstr ""
+
+#: includes/admin-i18n.php:390
+msgid "Short, up to 40 characters, per language."
+msgstr ""
+
+#: includes/admin-i18n.php:391
+msgid "On phones"
+msgstr ""
+
+#: includes/admin-i18n.php:392
+msgid "Screens narrower than 780px."
+msgstr ""
+
+#: includes/admin-i18n.php:393
+msgid "Shown"
+msgstr ""
+
+#: includes/admin-i18n.php:394
+msgid "Hidden"
+msgstr ""
+
+#: includes/admin-i18n.php:395
+msgid "Background and text of the button."
+msgstr ""
+
+#: includes/admin-i18n.php:396
+msgid "Background"
+msgstr ""
+
+#: includes/admin-i18n.php:397
+msgid "Text"
+msgstr ""
+
+#: includes/admin-i18n.php:398
+msgid "Hide on these pages"
+msgstr ""
+
+#: includes/admin-i18n.php:399
+msgid "E.g. the contact page. Applies to their translations too."
+msgstr ""
+
+#: includes/admin-i18n.php:400
+msgid "Add a page…"
+msgstr ""
+
+#: includes/admin-i18n.php:401
+msgid "Shown on every page."
+msgstr ""
+
+#: includes/admin-i18n.php:404
+msgid "Consent, how long requests are kept, and spam protection."
+msgstr ""
+
+#: includes/admin-i18n.php:405
+msgid "Privacy policy"
+msgstr ""
+
+#: includes/admin-i18n.php:406
+msgid "The page linked from the consent checkbox, per language."
+msgstr ""
+
+#. translators: %s: page title
+#: includes/admin-i18n.php:408
+#, php-format
+msgid "The WordPress privacy page (%s)"
+msgstr ""
+
+#: includes/admin-i18n.php:409
+msgid "No page (plain text, no link)"
+msgstr ""
+
+#: includes/admin-i18n.php:410
+msgid "Automatic deletion"
+msgstr ""
+
+#: includes/admin-i18n.php:411
+msgid "Older requests are deleted on their own after this period."
+msgstr ""
+
+#: includes/admin-i18n.php:412
+msgid "Never"
+msgstr ""
+
+#. translators: %d: number of months
+#: includes/admin-i18n.php:414
+#, php-format
+msgid "After %d months"
+msgstr ""
+
+#: includes/admin-i18n.php:415
+#: includes/store.php:232
+msgid "IP address"
+msgstr ""
+
+#: includes/admin-i18n.php:416
+msgid "Helps with spam, but it is personal data."
+msgstr ""
+
+#: includes/admin-i18n.php:417
+msgid "Keep the IP address with each request"
+msgstr ""
+
+#: includes/admin-i18n.php:418
+msgid "Off: the address is only used for the request limit and is not kept."
+msgstr ""
+
+#: includes/admin-i18n.php:419
+msgid "Spam protection"
+msgstr ""
+
+#: includes/admin-i18n.php:420
+msgid "No CAPTCHA for your visitors."
+msgstr ""
+
+#: includes/admin-i18n.php:421
+msgid "On"
+msgstr ""
+
+#: includes/admin-i18n.php:422
+msgid "Hidden trap field, a signed token that must be at least a few seconds old, and at most 5 requests an hour from the same connection."
+msgstr ""
+
+#: includes/admin-i18n.php:423
+msgid "WordPress tools"
+msgstr ""
+
+#: includes/admin-i18n.php:424
+msgid "Export and erase personal data on request."
+msgstr ""
+
+#: includes/admin-i18n.php:425
+msgid "Requests appear in Tools → Export Personal Data / Erase Personal Data, found by the customer’s email."
+msgstr ""
+
+#: includes/admin-i18n.php:426
+msgid "Cloudflare Turnstile"
+msgstr ""
+
+#: includes/admin-i18n.php:427
+msgid "An extra check by Cloudflare right above “Send request”."
+msgstr ""
+
+#: includes/admin-i18n.php:428
+msgid "Ask for the Turnstile check"
+msgstr ""
+
+#: includes/admin-i18n.php:429
+msgid "Cloudflare’s script loads only when the visitor reaches the last step. If it can’t be checked, the request is not sent and the visitor is asked to try again."
+msgstr ""
+
+#: includes/admin-i18n.php:430
+msgid "Using the keys entered here"
+msgstr ""
+
+#: includes/admin-i18n.php:431
+msgid "They take priority over the keys of Contact Form 7."
+msgstr ""
+
+#: includes/admin-i18n.php:432
+msgid "Using the keys of Contact Form 7"
+msgstr ""
+
+#. translators: %s: Turnstile site key
+#: includes/admin-i18n.php:434
+#, php-format
+msgid "Found in Contact Form 7 → Integration (Site Key %s). They are only read, never changed."
+msgstr ""
+
+#: includes/admin-i18n.php:435
+msgid "No keys found"
+msgstr ""
+
+#: includes/admin-i18n.php:436
+msgid "Add them in Contact Form 7 → Integration, or below. Until then the check is not shown and the form works without it."
+msgstr ""
+
+#: includes/admin-i18n.php:437
+msgid "Keys of your own (optional)"
+msgstr ""
+
+#: includes/admin-i18n.php:438
+msgid "Only if you want different keys from Contact Form 7. Leave both empty to use those."
+msgstr ""
+
+#: includes/admin-i18n.php:439
+msgid "Saved (type to replace)"
+msgstr ""
+
+#: includes/admin-i18n.php:440
+msgid "Remove the saved Secret Key"
+msgstr ""
+
+#: includes/admin.php:70
+msgid "SmartInquiry needs JavaScript."
+msgstr ""
+
+#: includes/admin.php:166
+#: includes/admin.php:381
+#: includes/admin.php:399
+#: includes/admin.php:451
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: includes/admin.php:233
+#: includes/admin.php:385
+msgid "This request no longer exists."
+msgstr ""
+
+#: includes/admin.php:289
+msgid "Could not save. Please try again."
+msgstr ""
+
+#. translators: %s: site name
+#: includes/admin.php:311
+#, php-format
+msgid "SmartInquiry test email from %s"
+msgstr ""
+
+#: includes/admin.php:312
+msgid "If you can read this, new requests will reach this address."
+msgstr ""
+
+#: includes/admin.php:390
+#: includes/admin.php:435
+msgid "The server could not make the PDF."
+msgstr ""
+
+#: includes/admin.php:469
+#: includes/store.php:224
+msgid "Reference"
+msgstr ""
+
+#: includes/admin.php:469
+#: includes/store.php:226
+msgid "Name"
+msgstr ""
+
+#: includes/admin.php:469
+#: includes/store.php:229
+#: includes/submit.php:503
+msgid "Company"
+msgstr ""
+
+#: includes/admin.php:469
+msgid "Answers"
+msgstr ""
+
+#: includes/store.php:216
+#: includes/store.php:250
+msgid "SmartInquiry requests"
+msgstr ""
+
+#: includes/store.php:240
+msgid "Quote requests"
+msgstr ""
+
+#: includes/submit.php:513
+msgid "Open in the admin"
+msgstr ""
