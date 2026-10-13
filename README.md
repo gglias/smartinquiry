@@ -7,7 +7,7 @@ A step-by-step quote request form in a popup for WordPress. Visitors pick a serv
 > [!NOTE]
 > **Built for the Smartup website.** This plugin was made for Smartup's own website ([smartupweb.com](https://smartupweb.com)), so it ships with Smartup defaults. These include the default PDF logo, the pre-filled list of agency services and budgets, the `#smartup-inquiry` link trigger and the `SU` reference prefix. Some of these can be changed in the settings. Others may not be changeable from the admin.
 >
-> **Need a white-label version?** Send me a message or email me at **[gregolia@gmail.com](mailto:gregolia@gmail.com)** and tell me what you need.
+> **Need a white-label version?** Send me a message or email me at **[gglias.pro@gmail.com](mailto:gglias.pro@gmail.com)** and tell me what you need.
 
 ## Features
 
